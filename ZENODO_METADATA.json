@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "title": "Temporal limits of protein-sequence transfer for cancer dependency prediction under unseen similarity components",
+    "upload_type": "software",
+    "description": "Code, protocols, aggregate metrics, per-gene predictions and sequence-component identifiers for a component-disjoint evaluation of frozen ESM-2 embeddings in cancer dependency prediction, including the DepMap 24Q4 development campaign, the 26Q3 time-out analysis and post-review diagnostic probes.",
+    "creators": [
+      {"name": "TODO: author-approved creator list"}
+    ],
+    "license": "MIT",
+    "keywords": [
+      "protein language model",
+      "cancer dependency",
+      "CRISPR",
+      "homology-controlled evaluation",
+      "sequence-component split",
+      "negative result",
+      "reproducibility"
+    ],
+    "version": "1.1.0-round2",
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/chnoorlee/temporal-limits-sequence-transfer-dependency",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ]
+  }
+}
