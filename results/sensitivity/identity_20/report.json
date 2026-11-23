@@ -1,0 +1,221 @@
+{
+ "bootstrap": {
+  "delta_r2_method_minus_baseline": {
+   "ci_high": -0.002149362232396278,
+   "ci_low": -0.03278108034511015,
+   "estimate": -0.017710244611770298
+  },
+  "method_mse_improvement_vs_global": {
+   "ci_high": 0.04109634691377509,
+   "ci_low": 0.031096369384463536,
+   "estimate": 0.03594102196649271
+  },
+  "n_components": 10932,
+  "replicates": 5000
+ },
+ "distance_quartiles": {
+  "edges": [
+   0.0021734457843143318,
+   0.012646786705950208,
+   0.017737455388002032,
+   0.02537901490527139,
+   0.24800115898292296
+  ],
+  "quartiles": {
+   "Q1": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": -0.0030690352651883052,
+      "ci_low": -0.04802700547960083,
+      "estimate": -0.025604492014331164
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.0547972127714872,
+      "ci_low": 0.035586843621231184,
+      "estimate": 0.04481690900115261
+     },
+     "n_components": 3334,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.025604492014331126,
+    "method": {
+     "mae": 0.23631104546476867,
+     "mse": 0.1468366910748833,
+     "n": 4442,
+     "pearson": 0.4804786399418096,
+     "r2": 0.23384329322993214
+    },
+    "n_components": 3334,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.2281741768419884,
+     "mse": 0.14192949800221863,
+     "n": 4442,
+     "pearson": 0.5024153654851439,
+     "r2": 0.25944778524426326
+    }
+   },
+   "Q2": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.01193254781102536,
+      "ci_low": -0.037678240891637384,
+      "estimate": -0.013664781995422832
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.0494051574630245,
+      "ci_low": 0.030383811119554627,
+      "estimate": 0.03961133336069244
+     },
+     "n_components": 3341,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.013664781995422981,
+    "method": {
+     "mae": 0.1935619042587113,
+     "mse": 0.10315361191971703,
+     "n": 4442,
+     "pearson": 0.5274628244067578,
+     "r2": 0.27745840047002057
+    },
+    "n_components": 3341,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.18853279195127265,
+     "mse": 0.10120276006587174,
+     "n": 4442,
+     "pearson": 0.5454866167930672,
+     "r2": 0.29112318246544355
+    }
+   },
+   "Q3": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": -0.0005723140752918361,
+      "ci_low": -0.06480196407315955,
+      "estimate": -0.033658863327027846
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.042844216417766534,
+      "ci_low": 0.02703297220348339,
+      "estimate": 0.03476000326862133
+     },
+     "n_components": 3218,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.03365886332702783,
+    "method": {
+     "mae": 0.17974590063042292,
+     "mse": 0.09582951072147729,
+     "n": 4442,
+     "pearson": 0.5149211103954712,
+     "r2": 0.26617759884807324
+    },
+    "n_components": 3218,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.17374026783661314,
+     "mse": 0.09143401611814159,
+     "n": 4442,
+     "pearson": 0.5488965445345285,
+     "r2": 0.29983646217510107
+    }
+   },
+   "Q4": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.04595146652355668,
+      "ci_low": -0.028618642305580873,
+      "estimate": 0.007789980605195694
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.0333550275730019,
+      "ci_low": 0.016904509721373473,
+      "estimate": 0.02457584223550444
+     },
+     "n_components": 2481,
+     "replicates": 5000
+    },
+    "delta_r2_point": 0.0077899806051957565,
+    "method": {
+     "mae": 0.17865350021102888,
+     "mse": 0.09378127134660326,
+     "n": 4442,
+     "pearson": 0.4514656256862239,
+     "r2": 0.20764144622752623
+    },
+    "n_components": 2481,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.18431372691883668,
+     "mse": 0.09470327096589481,
+     "n": 4442,
+     "pearson": 0.4598396903953325,
+     "r2": 0.19985146562233047
+    }
+   }
+  }
+ },
+ "headline": {
+  "delta_r2_point": -0.017710244611770398,
+  "method": {
+   "mae": 0.19706808764123293,
+   "mse": 0.10990027126567022,
+   "n": 17768,
+   "pearson": 0.4970847341535319,
+   "r2": 0.24643927086739859
+  },
+  "selected_baseline": {
+   "mae": 0.19369024088717773,
+   "mse": 0.10731738628803168,
+   "n": 17768,
+   "pearson": 0.5173051925799956,
+   "r2": 0.264149515479169
+  }
+ },
+ "label": "identity_20",
+ "n_genes": 17768,
+ "runs": [
+  {
+   "fold": 0,
+   "identity": 20,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_20/diagnostic-sens-i20-of0-ss42-ts42",
+   "run_id": "diagnostic-sens-i20-of0-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 1,
+   "identity": 20,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_20/diagnostic-sens-i20-of1-ss42-ts42",
+   "run_id": "diagnostic-sens-i20-of1-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 2,
+   "identity": 20,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_20/diagnostic-sens-i20-of2-ss42-ts42",
+   "run_id": "diagnostic-sens-i20-of2-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 3,
+   "identity": 20,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_20/diagnostic-sens-i20-of3-ss42-ts42",
+   "run_id": "diagnostic-sens-i20-of3-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 4,
+   "identity": 20,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_20/diagnostic-sens-i20-of4-ss42-ts42",
+   "run_id": "diagnostic-sens-i20-of4-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  }
+ ],
+ "status": "diagnostic_complete"
+}

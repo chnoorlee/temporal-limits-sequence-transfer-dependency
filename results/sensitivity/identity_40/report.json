@@ -1,0 +1,221 @@
+{
+ "bootstrap": {
+  "delta_r2_method_minus_baseline": {
+   "ci_high": -0.008308152158052537,
+   "ci_low": -0.03704305987134002,
+   "estimate": -0.022837477615529247
+  },
+  "method_mse_improvement_vs_global": {
+   "ci_high": 0.042485346752825455,
+   "ci_low": 0.033512406776425425,
+   "estimate": 0.03776766066723735
+  },
+  "n_components": 12772,
+  "replicates": 5000
+ },
+ "distance_quartiles": {
+  "edges": [
+   0.001208358833730605,
+   0.011607213620035611,
+   0.016238665742806524,
+   0.022607936052171318,
+   0.23267660325640982
+  ],
+  "quartiles": {
+   "Q1": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.00024238835615214994,
+      "ci_low": -0.04193728755677796,
+      "estimate": -0.021246358208356228
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.05091324385890834,
+      "ci_low": 0.034893631307602355,
+      "estimate": 0.042622696050381444
+     },
+     "n_components": 3387,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.021246358208356297,
+    "method": {
+     "mae": 0.21559155636501753,
+     "mse": 0.1268256956557408,
+     "n": 4442,
+     "pearson": 0.5059030476550005,
+     "r2": 0.25153792031442124
+    },
+    "n_components": 3387,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.21196260905191727,
+     "mse": 0.12322553442772269,
+     "n": 4442,
+     "pearson": 0.5205199815136763,
+     "r2": 0.27278427852277753
+    }
+   },
+   "Q2": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.012327163205457225,
+      "ci_low": -0.051403304553119096,
+      "estimate": -0.021859236363587106
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.046730705815699394,
+      "ci_low": 0.028665951185955663,
+      "estimate": 0.03729802869048091
+     },
+     "n_components": 3648,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.021859236363586998,
+    "method": {
+     "mae": 0.1903096079730652,
+     "mse": 0.10333814628076035,
+     "n": 4441,
+     "pearson": 0.5154524801482713,
+     "r2": 0.26520935099456455
+    },
+    "n_components": 3648,
+    "n_genes": 4441,
+    "selected_baseline": {
+     "mae": 0.18552186511658622,
+     "mse": 0.10026394689079321,
+     "n": 4441,
+     "pearson": 0.5405000987067934,
+     "r2": 0.28706858735815155
+    }
+   },
+   "Q3": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.02431179139117021,
+      "ci_low": -0.03538827472005957,
+      "estimate": -0.00612437823120935
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.04954117415854831,
+      "ci_low": 0.03242858572564762,
+      "estimate": 0.0405284765088535
+     },
+     "n_components": 3611,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.00612437823120926,
+    "method": {
+     "mae": 0.18331903086460247,
+     "mse": 0.09675073771668713,
+     "n": 4443,
+     "pearson": 0.5442243147700732,
+     "r2": 0.29522660613622054
+    },
+    "n_components": 3611,
+    "n_genes": 4443,
+    "selected_baseline": {
+     "mae": 0.1792350601767276,
+     "mse": 0.0959099878854867,
+     "n": 4443,
+     "pearson": 0.5534760946891218,
+     "r2": 0.3013509843674298
+    }
+   },
+   "Q4": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": -0.01223954958438689,
+      "ci_low": -0.07284017827845751,
+      "estimate": -0.042711835242595246
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.03930367712867352,
+      "ci_low": 0.022581033037320963,
+      "estimate": 0.03062071416848652
+     },
+     "n_components": 3407,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.04271183524259525,
+    "method": {
+     "mae": 0.19333964463770145,
+     "mse": 0.10533514803189901,
+     "n": 4442,
+     "pearson": 0.4744584243410557,
+     "r2": 0.2252254053109869
+    },
+    "n_components": 3407,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.18667879625914838,
+     "mse": 0.09952822364533116,
+     "n": 4442,
+     "pearson": 0.5191927069193821,
+     "r2": 0.26793724055358215
+    }
+   }
+  }
+ },
+ "headline": {
+  "delta_r2_point": -0.022837477615529123,
+  "method": {
+   "mae": 0.1956395665237443,
+   "mse": 0.10806206117563,
+   "n": 17768,
+   "pearson": 0.5099682392766881,
+   "r2": 0.2589846582024774
+  },
+  "selected_baseline": {
+   "mae": 0.19084922882371194,
+   "mse": 0.10473167816736467,
+   "n": 17768,
+   "pearson": 0.5328829792438227,
+   "r2": 0.2818221358180065
+  }
+ },
+ "label": "identity_40",
+ "n_genes": 17768,
+ "runs": [
+  {
+   "fold": 0,
+   "identity": 40,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_40/diagnostic-sens-i40-of0-ss42-ts42",
+   "run_id": "diagnostic-sens-i40-of0-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 1,
+   "identity": 40,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_40/diagnostic-sens-i40-of1-ss42-ts42",
+   "run_id": "diagnostic-sens-i40-of1-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 2,
+   "identity": 40,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_40/diagnostic-sens-i40-of2-ss42-ts42",
+   "run_id": "diagnostic-sens-i40-of2-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 3,
+   "identity": 40,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_40/diagnostic-sens-i40-of3-ss42-ts42",
+   "run_id": "diagnostic-sens-i40-of3-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 4,
+   "identity": 40,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/sensitivity/identity_40/diagnostic-sens-i40-of4-ss42-ts42",
+   "run_id": "diagnostic-sens-i40-of4-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  }
+ ],
+ "status": "diagnostic_complete"
+}

@@ -1,0 +1,12 @@
+{
+ "per_gene_consensus.tsv": {
+  "bytes": 3630552,
+  "description": "Consensus per-gene predictions and component annotations for 17,768 genes.",
+  "sha256": "24445b4d0e27194102a68e985ef1f43b715269cd75d62f849633dec4cc5ca3c9"
+ },
+ "per_job_gene_predictions.npz": {
+  "bytes": 9776064,
+  "description": "Per-job outer-test gene-mean predictions, component IDs, distances and learned weights.",
+  "sha256": "7d24d265bbe7802a22899e10eaf1abeba66be624ad96e64aa2256b7cea80b3fb"
+ }
+}

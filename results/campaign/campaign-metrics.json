@@ -1,0 +1,3520 @@
+{
+  "claim_boundary": "Passing internal gates does not establish novelty, external validation, NAR submission readiness, or acceptance. Failed and undefined gates remain reported.",
+  "component_block_bootstrap": {
+    "confidence_level": 0.95,
+    "delta_r2_vs_consensus_per_job_selected_baseline": {
+      "ci_high": -0.022091625306810428,
+      "ci_low": -0.04893197959859741,
+      "direction": "positive_favors_proposed",
+      "estimate": -0.035640967555449536
+    },
+    "mse_improvement_vs_consensus_global": {
+      "ci_high": 0.04246807009489142,
+      "ci_low": 0.03264276555703847,
+      "direction": "positive_favors_proposed",
+      "estimate": 0.03739722463092319
+    },
+    "n_components": 11577,
+    "replicates": 5000,
+    "seed": 20261027,
+    "unit": "sequence_component"
+  },
+  "locked_gates": {
+    "context": false,
+    "development_signal": true,
+    "external_3d": "not_evaluated_no_external_outcomes_read",
+    "intended_nar_mainline_internal_gates_passed": false,
+    "method": false,
+    "nar_submission_ready": false,
+    "temporal_26q3": "not_evaluated_no_external_outcomes_read"
+  },
+  "primary_analysis": {
+    "aggregation": "arithmetic_mean",
+    "identity_percent": 30.0,
+    "job_baseline_selection": {
+      "cross_job_selection_used": false,
+      "identity_distribution_descriptive_only": {
+        "DECOMP-MEAN-ONLY": 43,
+        "GLOBAL-TRAIN-MEAN": 0,
+        "IDFREE-PLM-MEAN-MLP": 0,
+        "PLM-RIDGE": 0,
+        "SEQUENCE-KNN": 0,
+        "SEQUENCE-WEIGHTED-KNN": 2,
+        "STATIC-CONVEX-STACK": 0
+      },
+      "job_count": 45,
+      "jobs": [
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of0-ss42-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 0,
+            "split_seed": 42,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10762290605504868,
+            "r2": 0.2439453076292516
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of0-ss42-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 0,
+            "split_seed": 42,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10632723233579121,
+            "r2": 0.25304746098241426
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of0-ss42-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 0,
+            "split_seed": 42,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10796123781476083,
+            "r2": 0.24156851514255195
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of0-ss43-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 0,
+            "split_seed": 43,
+            "training_seed": 42
+          },
+          "selected": "SEQUENCE-WEIGHTED-KNN",
+          "selected_inner_validation": {
+            "mse": 0.10452445996759957,
+            "r2": 0.19947999593794563
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of0-ss43-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 0,
+            "split_seed": 43,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10295188964579229,
+            "r2": 0.21152381803270948
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of0-ss43-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 0,
+            "split_seed": 43,
+            "training_seed": 44
+          },
+          "selected": "SEQUENCE-WEIGHTED-KNN",
+          "selected_inner_validation": {
+            "mse": 0.10452445996759957,
+            "r2": 0.19947999593794563
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of0-ss44-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 0,
+            "split_seed": 44,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.1060816144167955,
+            "r2": 0.2602908592717845
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of0-ss44-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 0,
+            "split_seed": 44,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10327972318436608,
+            "r2": 0.2798285008070188
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of0-ss44-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 0,
+            "split_seed": 44,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10549472316894597,
+            "r2": 0.2643832632480475
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of1-ss42-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 1,
+            "split_seed": 42,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10709403771469095,
+            "r2": 0.2826004693356128
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of1-ss42-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 1,
+            "split_seed": 42,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.1062736412003822,
+            "r2": 0.2880961261143007
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of1-ss42-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 1,
+            "split_seed": 42,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10492596167983631,
+            "r2": 0.2971239364028748
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of1-ss43-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 1,
+            "split_seed": 43,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10208306590506613,
+            "r2": 0.2984869235195664
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of1-ss43-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 1,
+            "split_seed": 43,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10075893488167233,
+            "r2": 0.30758632918150075
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of1-ss43-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 1,
+            "split_seed": 43,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.1033055683378732,
+            "r2": 0.29008590778752674
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of1-ss44-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 1,
+            "split_seed": 44,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10813386112714922,
+            "r2": 0.2764180726087958
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of1-ss44-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 1,
+            "split_seed": 44,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.1076334451713357,
+            "r2": 0.2797666253935621
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of1-ss44-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 1,
+            "split_seed": 44,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10814357533382048,
+            "r2": 0.27635306961793804
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of2-ss42-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 2,
+            "split_seed": 42,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10069389594708124,
+            "r2": 0.25274002892141745
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of2-ss42-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 2,
+            "split_seed": 42,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.09978584208985526,
+            "r2": 0.25947879190904777
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of2-ss42-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 2,
+            "split_seed": 42,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10061871712690235,
+            "r2": 0.25329793883705043
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of2-ss43-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 2,
+            "split_seed": 43,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.11301965338385304,
+            "r2": 0.24501679155101408
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of2-ss43-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 2,
+            "split_seed": 43,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.11328016225537994,
+            "r2": 0.24327656480490278
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of2-ss43-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 2,
+            "split_seed": 43,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.11231884334765098,
+            "r2": 0.24969827652998566
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of2-ss44-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 2,
+            "split_seed": 44,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.1066368772426216,
+            "r2": 0.24621627510151856
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of2-ss44-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 2,
+            "split_seed": 44,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10657042594879793,
+            "r2": 0.2466859991320598
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of2-ss44-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 2,
+            "split_seed": 44,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10677519237727714,
+            "r2": 0.2452385673881421
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of3-ss42-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 3,
+            "split_seed": 42,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.11376203566152794,
+            "r2": 0.25482700417247195
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of3-ss42-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 3,
+            "split_seed": 42,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.11224226303300512,
+            "r2": 0.2647819378723444
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of3-ss42-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 3,
+            "split_seed": 42,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.1128160479350396,
+            "r2": 0.2610234870682311
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of3-ss43-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 3,
+            "split_seed": 43,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.09638186670104563,
+            "r2": 0.2709872724746455
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of3-ss43-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 3,
+            "split_seed": 43,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.09675305049303644,
+            "r2": 0.26817971418723696
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of3-ss43-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 3,
+            "split_seed": 43,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.0959981705808147,
+            "r2": 0.27388947145381726
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of3-ss44-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 3,
+            "split_seed": 44,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10330755373554446,
+            "r2": 0.2843631923462031
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of3-ss44-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 3,
+            "split_seed": 44,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10623308923990221,
+            "r2": 0.2640972890960317
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of3-ss44-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 3,
+            "split_seed": 44,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10483540617341286,
+            "r2": 0.2737793831118739
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of4-ss42-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 4,
+            "split_seed": 42,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.09984817682360483,
+            "r2": 0.3346592650000424
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of4-ss42-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 4,
+            "split_seed": 42,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10042134983524689,
+            "r2": 0.3308399128097488
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of4-ss42-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 4,
+            "split_seed": 42,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10091505607316177,
+            "r2": 0.32755008938324126
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of4-ss43-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 4,
+            "split_seed": 43,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.11408134077906226,
+            "r2": 0.33376133536054364
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of4-ss43-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 4,
+            "split_seed": 43,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.11482952650197908,
+            "r2": 0.32939190690244213
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of4-ss43-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 4,
+            "split_seed": 43,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.11373078863519565,
+            "r2": 0.3358085710488804
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of4-ss44-ts42",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 4,
+            "split_seed": 44,
+            "training_seed": 42
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10243197048737815,
+            "r2": 0.31933378353542474
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of4-ss44-ts43",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 4,
+            "split_seed": 44,
+            "training_seed": 43
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10277180860618783,
+            "r2": 0.3170755400842834
+          }
+        },
+        {
+          "run_id": "diagnostic-primary-20261123-i30-of4-ss44-ts44",
+          "run_key": {
+            "identity_percent": 30,
+            "outer_fold": 4,
+            "split_seed": 44,
+            "training_seed": 44
+          },
+          "selected": "DECOMP-MEAN-ONLY",
+          "selected_inner_validation": {
+            "mse": 0.10237071516898633,
+            "r2": 0.3197408285781952
+          }
+        }
+      ],
+      "rule": "max_r2_then_min_mse_then_lexicographic_method_name",
+      "selection_scope": "independent_within_each_job_inner_validation_only"
+    },
+    "methods": {
+      "DECOMP-MEAN-ONLY": {
+        "mae": 0.18772915438553334,
+        "mse": 0.1031853864102776,
+        "n_genes": 17768,
+        "pearson": 0.54173384045685,
+        "r2_vs_consensus_global_train_mean": 0.2924784743004807,
+        "reference_sse": 2591.2963480865837,
+        "spearman": 0.3458416661714783
+      },
+      "FAMILY-DISTANCE-STACK": {
+        "mae": 0.19529731048714857,
+        "mse": 0.10844340729650723,
+        "n_genes": 17768,
+        "pearson": 0.5082939226628881,
+        "r2_vs_consensus_global_train_mean": 0.25642527831017536,
+        "reference_sse": 2591.2963480865837,
+        "spearman": 0.32211959903256726
+      },
+      "FAMILY-INDUCTIVE-DECOMP": {
+        "mae": 0.18679465908481466,
+        "mse": 0.10314384622695168,
+        "n_genes": 17768,
+        "pearson": 0.5419768404585813,
+        "r2_vs_consensus_global_train_mean": 0.2927633070166924,
+        "reference_sse": 2591.2963480865837,
+        "spearman": 0.3454352115583026
+      },
+      "GLOBAL-TRAIN-MEAN": {
+        "mae": 0.2200005342799255,
+        "mse": 0.14584063192743044,
+        "n_genes": 17768,
+        "pearson": -0.03462021435906663,
+        "r2_vs_consensus_global_train_mean": 0.0,
+        "reference_sse": 2591.2963480865837,
+        "spearman": -0.040057064306960787
+      },
+      "IDFREE-PLM-MEAN-MLP": {
+        "mae": 0.23369052850866623,
+        "mse": 0.13294093391975687,
+        "n_genes": 17768,
+        "pearson": 0.31442114480456484,
+        "r2_vs_consensus_global_train_mean": 0.08845064531873659,
+        "reference_sse": 2591.2963480865837,
+        "spearman": 0.23518531334407908
+      },
+      "PLM-RIDGE": {
+        "mae": 0.21120561856804204,
+        "mse": 0.1162490497284134,
+        "n_genes": 17768,
+        "pearson": 0.4525913925723523,
+        "r2_vs_consensus_global_train_mean": 0.20290355169155894,
+        "reference_sse": 2591.2963480865837,
+        "spearman": 0.2948811175884509
+      },
+      "SEQUENCE-KNN": {
+        "mae": 0.19688306490989893,
+        "mse": 0.11057737906202801,
+        "n_genes": 17768,
+        "pearson": 0.49194597244720784,
+        "r2_vs_consensus_global_train_mean": 0.24179306136680223,
+        "reference_sse": 2591.2963480865837,
+        "spearman": 0.3097524549702045
+      },
+      "SEQUENCE-WEIGHTED-KNN": {
+        "mae": 0.19600166419781498,
+        "mse": 0.10989750145738554,
+        "n_genes": 17768,
+        "pearson": 0.4967385459122133,
+        "r2_vs_consensus_global_train_mean": 0.24645484591653455,
+        "reference_sse": 2591.2963480865837,
+        "spearman": 0.3152444545285233
+      },
+      "STATIC-CONVEX-STACK": {
+        "mae": 0.19580480452280072,
+        "mse": 0.10849036934424612,
+        "n_genes": 17768,
+        "pearson": 0.5070260895562375,
+        "r2_vs_consensus_global_train_mean": 0.2561032689557299,
+        "reference_sse": 2591.2963480865837,
+        "spearman": 0.32272555941639225
+      }
+    },
+    "per_job_selected_baseline": {
+      "mae": 0.187872968022845,
+      "mse": 0.10324550606571543,
+      "n_genes": 17768,
+      "pearson": 0.5409258410930796,
+      "r2_vs_consensus_global_train_mean": 0.292066245865625,
+      "reference_sse": 2591.2963480865837,
+      "spearman": 0.34620151762969764
+    },
+    "prediction_count_per_gene": 9,
+    "primary_method": "FAMILY-DISTANCE-STACK",
+    "r2_reference": "per_gene_consensus_GLOBAL-TRAIN-MEAN_prediction"
+  },
+  "robustness": {
+    "component_size_bins": {
+      "size_1": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.21530762055588398,
+            "mse": 0.13471016917110612,
+            "n_genes": 9181,
+            "pearson": 0.5916257430226719,
+            "r2_vs_consensus_global_train_mean": 0.350722176964941,
+            "reference_sse": 1904.8456905221344,
+            "spearman": 0.4383100987884707
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.22724081571762395,
+            "mse": 0.1455803803045175,
+            "n_genes": 9181,
+            "pearson": 0.5615166186416026,
+            "r2_vs_consensus_global_train_mean": 0.29832979215791033,
+            "reference_sse": 1904.8456905221344,
+            "spearman": 0.40948535358260085
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.21455761419373712,
+            "mse": 0.134967560423571,
+            "n_genes": 9181,
+            "pearson": 0.5915005767884322,
+            "r2_vs_consensus_global_train_mean": 0.34948159926322053,
+            "reference_sse": 1904.8456905221344,
+            "spearman": 0.4384671675356178
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.262384236471569,
+            "mse": 0.20747692958524505,
+            "n_genes": 9181,
+            "pearson": -0.02904294782549841,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 1904.8456905221344,
+            "spearman": -0.03389074699535729
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.26078982550824326,
+            "mse": 0.17542982778556018,
+            "n_genes": 9181,
+            "pearson": 0.3823056120171696,
+            "r2_vs_consensus_global_train_mean": 0.15446103749341333,
+            "reference_sse": 1904.8456905221344,
+            "spearman": 0.3070843072799559
+          },
+          "PLM-RIDGE": {
+            "mae": 0.24137038572729277,
+            "mse": 0.15456351587587103,
+            "n_genes": 9181,
+            "pearson": 0.5050420854401059,
+            "r2_vs_consensus_global_train_mean": 0.2550327586549027,
+            "reference_sse": 1904.8456905221344,
+            "spearman": 0.3841356582869949
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.2297567110918775,
+            "mse": 0.14793941060208304,
+            "n_genes": 9181,
+            "pearson": 0.5420476192768303,
+            "r2_vs_consensus_global_train_mean": 0.28695970728976905,
+            "reference_sse": 1904.8456905221344,
+            "spearman": 0.38624757547825495
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.22852110410018173,
+            "mse": 0.14684219085370243,
+            "n_genes": 9181,
+            "pearson": 0.5491393307170948,
+            "r2_vs_consensus_global_train_mean": 0.29224810128409906,
+            "reference_sse": 1904.8456905221344,
+            "spearman": 0.3937159904508253
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.2272131984962148,
+            "mse": 0.1451230528150509,
+            "n_genes": 9181,
+            "pearson": 0.5615153323688373,
+            "r2_vs_consensus_global_train_mean": 0.30053402513157523,
+            "reference_sse": 1904.8456905221344,
+            "spearman": 0.40989337502956374
+          }
+        },
+        "n_genes": 9181,
+        "per_job_selected_baseline": {
+          "mae": 0.21569415290383293,
+          "mse": 0.13509342881932865,
+          "n_genes": 9181,
+          "pearson": 0.5906751164788359,
+          "r2_vs_consensus_global_train_mean": 0.3488749371345238,
+          "reference_sse": 1904.8456905221344,
+          "spearman": 0.43883891883613346
+        },
+        "status": "evaluated"
+      },
+      "size_11_plus": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.12242486632252572,
+            "mse": 0.04737820765453938,
+            "n_genes": 2303,
+            "pearson": 0.38766496085448654,
+            "r2_vs_consensus_global_train_mean": 0.20788054358570407,
+            "reference_sse": 137.74691600471962,
+            "spearman": 0.18890075639211248
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.12971450013380043,
+            "mse": 0.048328802433937536,
+            "n_genes": 2303,
+            "pearson": 0.34133972245584715,
+            "r2_vs_consensus_global_train_mean": 0.19198748521132325,
+            "reference_sse": 137.74691600471962,
+            "spearman": 0.07278182447019269
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.121835781808067,
+            "mse": 0.04739192717470591,
+            "n_genes": 2303,
+            "pearson": 0.38831048111838845,
+            "r2_vs_consensus_global_train_mean": 0.2076511660006377,
+            "reference_sse": 137.74691600471962,
+            "spearman": 0.18799521279797862
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.16597258290977412,
+            "mse": 0.05981194789610059,
+            "n_genes": 2303,
+            "pearson": -0.15135511068496918,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 137.74691600471962,
+            "spearman": -0.1982189835526104
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.20632489884640612,
+            "mse": 0.08398937720297509,
+            "n_genes": 2303,
+            "pearson": 0.09342550877487375,
+            "r2_vs_consensus_global_train_mean": -0.40422407491013623,
+            "reference_sse": 137.74691600471962,
+            "spearman": -0.009593529406227439
+          },
+          "PLM-RIDGE": {
+            "mae": 0.1535686950088274,
+            "mse": 0.056059757010563364,
+            "n_genes": 2303,
+            "pearson": 0.2948217681923436,
+            "r2_vs_consensus_global_train_mean": 0.06273313305320083,
+            "reference_sse": 137.74691600471962,
+            "spearman": 0.05551515747894909
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.12836394819847669,
+            "mse": 0.04940466525670269,
+            "n_genes": 2303,
+            "pearson": 0.34694093936572834,
+            "r2_vs_consensus_global_train_mean": 0.17400006195211015,
+            "reference_sse": 137.74691600471962,
+            "spearman": 0.0428624053557664
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.12842524192566396,
+            "mse": 0.049153339348065955,
+            "n_genes": 2303,
+            "pearson": 0.3459998590670038,
+            "r2_vs_consensus_global_train_mean": 0.17820199680755588,
+            "reference_sse": 137.74691600471962,
+            "spearman": 0.045717352882395874
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.1325056671648284,
+            "mse": 0.04945862416435475,
+            "n_genes": 2303,
+            "pearson": 0.3363293621862817,
+            "r2_vs_consensus_global_train_mean": 0.17309791932759977,
+            "reference_sse": 137.74691600471962,
+            "spearman": 0.0650254425555385
+          }
+        },
+        "n_genes": 2303,
+        "per_job_selected_baseline": {
+          "mae": 0.1225006900754921,
+          "mse": 0.047322665462302474,
+          "n_genes": 2303,
+          "pearson": 0.38325961922895546,
+          "r2_vs_consensus_global_train_mean": 0.20880915725221405,
+          "reference_sse": 137.74691600471962,
+          "spearman": 0.18176571227198532
+        },
+        "status": "evaluated"
+      },
+      "size_2": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.18525332467409544,
+            "mse": 0.08937033023344484,
+            "n_genes": 2922,
+            "pearson": 0.4417096828443313,
+            "r2_vs_consensus_global_train_mean": 0.10994425456982182,
+            "reference_sse": 293.397471206607,
+            "spearman": 0.2207673412119417
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.1864348096344983,
+            "mse": 0.0876779414947173,
+            "n_genes": 2922,
+            "pearson": 0.409626353112917,
+            "r2_vs_consensus_global_train_mean": 0.12679906887420123,
+            "reference_sse": 293.397471206607,
+            "spearman": 0.2089782116456078
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.18375434584759037,
+            "mse": 0.08904057192676933,
+            "n_genes": 2922,
+            "pearson": 0.44290115167398975,
+            "r2_vs_consensus_global_train_mean": 0.11322837889489956,
+            "reference_sse": 293.397471206607,
+            "spearman": 0.22108581769486696
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.18622132063274324,
+            "mse": 0.10040981218569711,
+            "n_genes": 2922,
+            "pearson": -0.006057411486290538,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 293.397471206607,
+            "spearman": -0.006664027907746735
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.2131519893030183,
+            "mse": 0.09806341308576481,
+            "n_genes": 2922,
+            "pearson": 0.3011641989177,
+            "r2_vs_consensus_global_train_mean": 0.023368225165015577,
+            "reference_sse": 293.397471206607,
+            "spearman": 0.17001093769174155
+          },
+          "PLM-RIDGE": {
+            "mae": 0.2000159021116733,
+            "mse": 0.0925618070499859,
+            "n_genes": 2922,
+            "pearson": 0.37341901060093696,
+            "r2_vs_consensus_global_train_mean": 0.07815974320514774,
+            "reference_sse": 293.397471206607,
+            "spearman": 0.19616118638806318
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.18823744804245576,
+            "mse": 0.08970300732582723,
+            "n_genes": 2922,
+            "pearson": 0.4023637317623062,
+            "r2_vs_consensus_global_train_mean": 0.10663106151487267,
+            "reference_sse": 293.397471206607,
+            "spearman": 0.20413565868652914
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.1873726886671812,
+            "mse": 0.08928820639162684,
+            "n_genes": 2922,
+            "pearson": 0.4050068127194868,
+            "r2_vs_consensus_global_train_mean": 0.11076214118897165,
+            "reference_sse": 293.397471206607,
+            "spearman": 0.20739447511810258
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.18677808943281904,
+            "mse": 0.087854225308813,
+            "n_genes": 2922,
+            "pearson": 0.41201032303920726,
+            "r2_vs_consensus_global_train_mean": 0.12504342557342862,
+            "reference_sse": 293.397471206607,
+            "spearman": 0.21183092438592088
+          }
+        },
+        "n_genes": 2922,
+        "per_job_selected_baseline": {
+          "mae": 0.18491248914358308,
+          "mse": 0.0885132069184829,
+          "n_genes": 2922,
+          "pearson": 0.44283370704655944,
+          "r2_vs_consensus_global_train_mean": 0.11848050512446673,
+          "reference_sse": 293.397471206607,
+          "spearman": 0.2212448048568816
+        },
+        "status": "evaluated"
+      },
+      "size_3_to_5": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.15501054817363621,
+            "mse": 0.061112614735386345,
+            "n_genes": 2588,
+            "pearson": 0.31543149712743407,
+            "r2_vs_consensus_global_train_mean": -0.11789386351153741,
+            "reference_sse": 141.47984177886806,
+            "spearman": 0.1904942053306111
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.1548243751706411,
+            "mse": 0.056032798382750444,
+            "n_genes": 2588,
+            "pearson": 0.30044378877785993,
+            "r2_vs_consensus_global_train_mean": -0.024972041184582405,
+            "reference_sse": 141.47984177886806,
+            "spearman": 0.18494363314117043
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.15365611999061096,
+            "mse": 0.06046807898924651,
+            "n_genes": 2588,
+            "pearson": 0.3152893149019767,
+            "r2_vs_consensus_global_train_mean": -0.10610378451486291,
+            "reference_sse": 141.47984177886806,
+            "spearman": 0.18888721655302332
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.15954812298447296,
+            "mse": 0.054667635926919665,
+            "n_genes": 2588,
+            "pearson": 0.011220063712583791,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 141.47984177886806,
+            "spearman": -0.00032885622979986906
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.18899803052262593,
+            "mse": 0.0666970855582083,
+            "n_genes": 2588,
+            "pearson": 0.1910454536712684,
+            "r2_vs_consensus_global_train_mean": -0.22004700637447994,
+            "reference_sse": 141.47984177886806,
+            "spearman": 0.12548709408942993
+          },
+          "PLM-RIDGE": {
+            "mae": 0.1704480621999555,
+            "mse": 0.061846526243532964,
+            "n_genes": 2588,
+            "pearson": 0.2522612659936616,
+            "r2_vs_consensus_global_train_mean": -0.13131883599667926,
+            "reference_sse": 141.47984177886806,
+            "spearman": 0.15533709324210074
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.1550149487026355,
+            "mse": 0.05784704196329858,
+            "n_genes": 2588,
+            "pearson": 0.30140965877413556,
+            "r2_vs_consensus_global_train_mean": -0.058158835341429516,
+            "reference_sse": 141.47984177886806,
+            "spearman": 0.18685439498704443
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.1554755684653834,
+            "mse": 0.05905316681264575,
+            "n_genes": 2588,
+            "pearson": 0.3006422858027373,
+            "r2_vs_consensus_global_train_mean": -0.08022170359787872,
+            "reference_sse": 141.47984177886806,
+            "spearman": 0.1920592558301332
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.1552039365707934,
+            "mse": 0.056638229747695966,
+            "n_genes": 2588,
+            "pearson": 0.30162467184429087,
+            "r2_vs_consensus_global_train_mean": -0.036046808817755016,
+            "reference_sse": 141.47984177886806,
+            "spearman": 0.18645154265894542
+          }
+        },
+        "n_genes": 2588,
+        "per_job_selected_baseline": {
+          "mae": 0.15450778037222787,
+          "mse": 0.06055785007935135,
+          "n_genes": 2588,
+          "pearson": 0.3177367601025373,
+          "r2_vs_consensus_global_train_mean": -0.10774590948666218,
+          "reference_sse": 141.47984177886806,
+          "spearman": 0.1920623974453111
+        },
+        "status": "evaluated"
+      },
+      "size_6_to_10": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.17365680915598364,
+            "mse": 0.08812961042916942,
+            "n_genes": 774,
+            "pearson": 0.6358901851183651,
+            "r2_vs_consensus_global_train_mean": 0.40073391279531323,
+            "reference_sse": 113.82642857425434,
+            "spearman": 0.2619010897614442
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.18031549500049768,
+            "mse": 0.10043918604791371,
+            "n_genes": 774,
+            "pearson": 0.5654818597739156,
+            "r2_vs_consensus_global_train_mean": 0.31703093055957743,
+            "reference_sse": 113.82642857425434,
+            "spearman": 0.2933826729644895
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.17304134896634127,
+            "mse": 0.08748209255056111,
+            "n_genes": 774,
+            "pearson": 0.6386220119146686,
+            "r2_vs_consensus_global_train_mean": 0.40513692222221365,
+            "reference_sse": 113.82642857425434,
+            "spearman": 0.2583465659429088
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.207668886855736,
+            "mse": 0.1470625692173829,
+            "n_genes": 774,
+            "pearson": -0.2062434964574701,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 113.82642857425434,
+            "spearman": -0.1325285653984174
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.2206442697306865,
+            "mse": 0.12776793130143688,
+            "n_genes": 774,
+            "pearson": 0.37238159746846755,
+            "r2_vs_consensus_global_train_mean": 0.13120019607045852,
+            "reference_sse": 113.82642857425434,
+            "spearman": 0.20345840664564588
+          },
+          "PLM-RIDGE": {
+            "mae": 0.2034175242966057,
+            "mse": 0.11219049845533384,
+            "n_genes": 774,
+            "pearson": 0.4904534421523586,
+            "r2_vs_consensus_global_train_mean": 0.23712404147177868,
+            "reference_sse": 113.82642857425434,
+            "spearman": 0.26543602265378763
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.18345122695218166,
+            "mse": 0.10453212705829376,
+            "n_genes": 774,
+            "pearson": 0.5399260015816784,
+            "r2_vs_consensus_global_train_mean": 0.28919964057082437,
+            "reference_sse": 113.82642857425434,
+            "spearman": 0.26024344546837513
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.1794162959874523,
+            "mse": 0.10022064129318774,
+            "n_genes": 774,
+            "pearson": 0.5682635207731942,
+            "r2_vs_consensus_global_train_mean": 0.318516997040593,
+            "reference_sse": 113.82642857425434,
+            "spearman": 0.2785044385287784
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.18142309395202164,
+            "mse": 0.10089035946212534,
+            "n_genes": 774,
+            "pearson": 0.5603632762646168,
+            "r2_vs_consensus_global_train_mean": 0.3139630294844594,
+            "reference_sse": 113.82642857425434,
+            "spearman": 0.294914000168865
+          }
+        },
+        "n_genes": 774,
+        "per_job_selected_baseline": {
+          "mae": 0.17511545206083512,
+          "mse": 0.0902196080161814,
+          "n_genes": 774,
+          "pearson": 0.6226340872221204,
+          "r2_vs_consensus_global_train_mean": 0.38652229118327264,
+          "reference_sse": 113.82642857425434,
+          "spearman": 0.26248426272156655
+        },
+        "status": "evaluated"
+      }
+    },
+    "distance_quartile_edges": [
+      0.0022990328206946575,
+      0.012374689245312043,
+      0.017230130076409687,
+      0.024517460500798866,
+      0.1954202820375729
+    ],
+    "distance_quartiles": {
+      "q1": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.21938982156593775,
+            "mse": 0.1296331085042011,
+            "n_genes": 4441,
+            "pearson": 0.5290190870884985,
+            "r2_vs_consensus_global_train_mean": 0.28340609632830904,
+            "reference_sse": 803.3847789066815,
+            "spearman": 0.3726374539367885
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.22656912227418313,
+            "mse": 0.13686009551068629,
+            "n_genes": 4441,
+            "pearson": 0.49623123295546595,
+            "r2_vs_consensus_global_train_mean": 0.24345631119611066,
+            "reference_sse": 803.3847789066815,
+            "spearman": 0.36292089008035605
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.21802717353119794,
+            "mse": 0.12951126352983108,
+            "n_genes": 4441,
+            "pearson": 0.5297372410643635,
+            "r2_vs_consensus_global_train_mean": 0.28407963850309825,
+            "reference_sse": 803.3847789066815,
+            "spearman": 0.3744294241568749
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.24566101288039754,
+            "mse": 0.18090177412895334,
+            "n_genes": 4441,
+            "pearson": -0.0157431694591394,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 803.3847789066815,
+            "spearman": -0.02321636331256922
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.2555296352803221,
+            "mse": 0.16063797026065282,
+            "n_genes": 4441,
+            "pearson": 0.3314052839846346,
+            "r2_vs_consensus_global_train_mean": 0.11201550656908277,
+            "reference_sse": 803.3847789066815,
+            "spearman": 0.2606670989298029
+          },
+          "PLM-RIDGE": {
+            "mae": 0.23541451198209554,
+            "mse": 0.14319134645915602,
+            "n_genes": 4441,
+            "pearson": 0.456765509676773,
+            "r2_vs_consensus_global_train_mean": 0.20845803116842798,
+            "reference_sse": 803.3847789066815,
+            "spearman": 0.3555198240977181
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.22758887852152795,
+            "mse": 0.13858951475631082,
+            "n_genes": 4441,
+            "pearson": 0.48152457914354374,
+            "r2_vs_consensus_global_train_mean": 0.23389632067666066,
+            "reference_sse": 803.3847789066815,
+            "spearman": 0.3457100208080334
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.22693389801305197,
+            "mse": 0.13805676716195114,
+            "n_genes": 4441,
+            "pearson": 0.48556792578794594,
+            "r2_vs_consensus_global_train_mean": 0.23684127573265668,
+            "reference_sse": 803.3847789066815,
+            "spearman": 0.34713428650844735
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.2263072117325301,
+            "mse": 0.1368216015317856,
+            "n_genes": 4441,
+            "pearson": 0.49730859144356626,
+            "r2_vs_consensus_global_train_mean": 0.24366910059016733,
+            "reference_sse": 803.3847789066815,
+            "spearman": 0.3632712645995561
+          }
+        },
+        "n_genes": 4441,
+        "per_job_selected_baseline": {
+          "mae": 0.2196651487118353,
+          "mse": 0.1301597892723274,
+          "n_genes": 4441,
+          "pearson": 0.5264394891408236,
+          "r2_vs_consensus_global_train_mean": 0.2804946778490691,
+          "reference_sse": 803.3847789066815,
+          "spearman": 0.3723279012543259
+        },
+        "status": "evaluated"
+      },
+      "q2": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.1856230678742653,
+            "mse": 0.10290289462690796,
+            "n_genes": 4443,
+            "pearson": 0.5230361265579473,
+            "r2_vs_consensus_global_train_mean": 0.26759576281764375,
+            "reference_sse": 624.2421024026893,
+            "spearman": 0.3447236265628952
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.1921394353461834,
+            "mse": 0.10528912908277693,
+            "n_genes": 4443,
+            "pearson": 0.5014432740931423,
+            "r2_vs_consensus_global_train_mean": 0.2506119040765895,
+            "reference_sse": 624.2421024026893,
+            "spearman": 0.3162679958488145
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.18453667022109219,
+            "mse": 0.10272142949783428,
+            "n_genes": 4443,
+            "pearson": 0.5239735344171226,
+            "r2_vs_consensus_global_train_mean": 0.2688873283262355,
+            "reference_sse": 624.2421024026893,
+            "spearman": 0.34425677653578424
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.21465489333271004,
+            "mse": 0.14050013558467012,
+            "n_genes": 4443,
+            "pearson": -0.04771731709141286,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 624.2421024026893,
+            "spearman": -0.060107082588162136
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.22286560205287995,
+            "mse": 0.12280070321431343,
+            "n_genes": 4443,
+            "pearson": 0.36636459093663587,
+            "r2_vs_consensus_global_train_mean": 0.12597448605087214,
+            "reference_sse": 624.2421024026893,
+            "spearman": 0.24142603128707707
+          },
+          "PLM-RIDGE": {
+            "mae": 0.20323947586669142,
+            "mse": 0.11052973476196178,
+            "n_genes": 4443,
+            "pearson": 0.46233025032457437,
+            "r2_vs_consensus_global_train_mean": 0.21331225552196798,
+            "reference_sse": 624.2421024026893,
+            "spearman": 0.29780295976480586
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19393569800506313,
+            "mse": 0.10821156918265551,
+            "n_genes": 4443,
+            "pearson": 0.4802850395625339,
+            "r2_vs_consensus_global_train_mean": 0.22981163874077837,
+            "reference_sse": 624.2421024026893,
+            "spearman": 0.30457282050079876
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19341858584277855,
+            "mse": 0.1075274919596623,
+            "n_genes": 4443,
+            "pearson": 0.4850012731409161,
+            "r2_vs_consensus_global_train_mean": 0.2346805110742214,
+            "reference_sse": 624.2421024026893,
+            "spearman": 0.30823800000552265
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19214839624933727,
+            "mse": 0.1054008029668806,
+            "n_genes": 4443,
+            "pearson": 0.5004242490525164,
+            "r2_vs_consensus_global_train_mean": 0.24981707292828537,
+            "reference_sse": 624.2421024026893,
+            "spearman": 0.3171920445592958
+          }
+        },
+        "n_genes": 4443,
+        "per_job_selected_baseline": {
+          "mae": 0.18588743714750833,
+          "mse": 0.10298148340449148,
+          "n_genes": 4443,
+          "pearson": 0.5214456941913955,
+          "r2_vs_consensus_global_train_mean": 0.2670364126272935,
+          "reference_sse": 624.2421024026893,
+          "spearman": 0.3447718135029578
+        },
+        "status": "evaluated"
+      },
+      "q3": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.1755764368807784,
+            "mse": 0.09192177472615362,
+            "n_genes": 4442,
+            "pearson": 0.5883155767452307,
+            "r2_vs_consensus_global_train_mean": 0.34298889411784383,
+            "reference_sse": 621.4758315011064,
+            "spearman": 0.3654643226328247
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.1835814119780354,
+            "mse": 0.0969874100542135,
+            "n_genes": 4442,
+            "pearson": 0.5565253125541305,
+            "r2_vs_consensus_global_train_mean": 0.30678225343015686,
+            "reference_sse": 621.4758315011064,
+            "spearman": 0.342396392285639
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.1745076289923787,
+            "mse": 0.09187108206046407,
+            "n_genes": 4442,
+            "pearson": 0.5885603989333338,
+            "r2_vs_consensus_global_train_mean": 0.3433512200677511,
+            "reference_sse": 621.4758315011064,
+            "spearman": 0.36522807354886433
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.2177614183332798,
+            "mse": 0.13990901204437334,
+            "n_genes": 4442,
+            "pearson": -0.0436632517318687,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 621.4758315011064,
+            "spearman": -0.040055520611940926
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.22057764173077835,
+            "mse": 0.12054021620629683,
+            "n_genes": 4442,
+            "pearson": 0.37956733385961366,
+            "r2_vs_consensus_global_train_mean": 0.13843851482514602,
+            "reference_sse": 621.4758315011064,
+            "spearman": 0.26695279682634826
+          },
+          "PLM-RIDGE": {
+            "mae": 0.1983005891837062,
+            "mse": 0.1040502509049005,
+            "n_genes": 4442,
+            "pearson": 0.5064218873953041,
+            "r2_vs_consensus_global_train_mean": 0.2563005814671889,
+            "reference_sse": 621.4758315011064,
+            "spearman": 0.3005618570018428
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.18621044726799496,
+            "mse": 0.09938060338480417,
+            "n_genes": 4442,
+            "pearson": 0.5390331981926009,
+            "r2_vs_consensus_global_train_mean": 0.2896768983452992,
+            "reference_sse": 621.4758315011064,
+            "spearman": 0.3387520401158348
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.1851926094333239,
+            "mse": 0.09838463399696377,
+            "n_genes": 4442,
+            "pearson": 0.5459397619716228,
+            "r2_vs_consensus_global_train_mean": 0.2967955919397084,
+            "reference_sse": 621.4758315011064,
+            "spearman": 0.34463799526233757
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.18368719305500963,
+            "mse": 0.09679064900444564,
+            "n_genes": 4442,
+            "pearson": 0.5567473067528496,
+            "r2_vs_consensus_global_train_mean": 0.308188603506487,
+            "reference_sse": 621.4758315011064,
+            "spearman": 0.344408707808415
+          }
+        },
+        "n_genes": 4442,
+        "per_job_selected_baseline": {
+          "mae": 0.1757397939967259,
+          "mse": 0.09177413131964379,
+          "n_genes": 4442,
+          "pearson": 0.5882000509900355,
+          "r2_vs_consensus_global_train_mean": 0.3440441757208831,
+          "reference_sse": 621.4758315011064,
+          "spearman": 0.3660727892517629
+        },
+        "status": "evaluated"
+      },
+      "q4": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.1703348929216678,
+            "mse": 0.08828978539165439,
+            "n_genes": 4442,
+            "pearson": 0.5240269309680505,
+            "r2_vs_consensus_global_train_mean": 0.27667312710151293,
+            "reference_sse": 542.1936352761064,
+            "spearman": 0.29612215706664125
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.17890702329276964,
+            "mse": 0.09464410191485555,
+            "n_genes": 4442,
+            "pearson": 0.47084015922384553,
+            "r2_vs_consensus_global_train_mean": 0.22461446731719847,
+            "reference_sse": 542.1936352761064,
+            "spearman": 0.25781965112926275
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.1701147031045651,
+            "mse": 0.08847764084940078,
+            "n_genes": 4442,
+            "pearson": 0.5230212762169039,
+            "r2_vs_consensus_global_train_mean": 0.27513409401624955,
+            "reference_sse": 542.1936352761064,
+            "spearman": 0.2938105648475041
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.20193179278933165,
+            "mse": 0.12206070132285149,
+            "n_genes": 4442,
+            "pearson": -0.03567626394552588,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 542.1936352761064,
+            "spearman": -0.03982701400843876
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.23579658842255916,
+            "mse": 0.12779336406778824,
+            "n_genes": 4442,
+            "pearson": 0.24275218376156638,
+            "r2_vs_consensus_global_train_mean": -0.04696567103750948,
+            "reference_sse": 542.1936352761064,
+            "spearman": 0.16391123266597907
+          },
+          "PLM-RIDGE": {
+            "mae": 0.20787514060665288,
+            "mse": 0.10723221969436596,
+            "n_genes": 4442,
+            "pearson": 0.3973461973292059,
+            "r2_vs_consensus_global_train_mean": 0.12148448655283506,
+            "reference_sse": 542.1936352761064,
+            "spearman": 0.2208325489322814
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.1798048119774987,
+            "mse": 0.09613466772343514,
+            "n_genes": 4442,
+            "pearson": 0.4577065274004355,
+            "r2_vs_consensus_global_train_mean": 0.21240279072985002,
+            "reference_sse": 542.1936352761064,
+            "spearman": 0.24295358374216372
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.17846910859714604,
+            "mse": 0.09562798557796229,
+            "n_genes": 4442,
+            "pearson": 0.462588511365674,
+            "r2_vs_consensus_global_train_mean": 0.21655385769883873,
+            "reference_sse": 542.1936352761064,
+            "spearman": 0.2542380691609349
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.18108410701728922,
+            "mse": 0.09495549744401335,
+            "n_genes": 4442,
+            "pearson": 0.4694182956492951,
+            "r2_vs_consensus_global_train_mean": 0.22206331427790738,
+            "reference_sse": 542.1936352761064,
+            "spearman": 0.25776554724150585
+          }
+        },
+        "n_genes": 4442,
+        "per_job_selected_baseline": {
+          "mae": 0.17020709640270457,
+          "mse": 0.08807273875038549,
+          "n_genes": 4442,
+          "pearson": 0.5252914685463262,
+          "r2_vs_consensus_global_train_mean": 0.27845131319184857,
+          "reference_sse": 542.1936352761064,
+          "spearman": 0.29608376110369233
+        },
+        "status": "evaluated"
+      }
+    },
+    "multi_gene_components": {
+      "methods": {
+        "DECOMP-MEAN-ONLY": {
+          "mae": 0.15824296620456335,
+          "mse": 0.06947989781971435,
+          "n_genes": 8587,
+          "pearson": 0.43979395093786766,
+          "r2_vs_consensus_global_train_mean": 0.13085685620182896,
+          "reference_sse": 686.4506575644492,
+          "spearman": 0.21640888520163207
+        },
+        "FAMILY-DISTANCE-STACK": {
+          "mae": 0.16114413457926527,
+          "mse": 0.06873750894009148,
+          "n_genes": 8587,
+          "pearson": 0.3953182272163023,
+          "r2_vs_consensus_global_train_mean": 0.1401436028005434,
+          "reference_sse": 686.4506575644492,
+          "spearman": 0.19334644372337936
+        },
+        "FAMILY-INDUCTIVE-DECOMP": {
+          "mae": 0.15711122006594697,
+          "mse": 0.06911874781782601,
+          "n_genes": 8587,
+          "pearson": 0.441112143503444,
+          "r2_vs_consensus_global_train_mean": 0.13537458086570842,
+          "reference_sse": 686.4506575644492,
+          "spearman": 0.2150588080545664
+        },
+        "GLOBAL-TRAIN-MEAN": {
+          "mae": 0.1746849677466218,
+          "mse": 0.0799406844723942,
+          "n_genes": 8587,
+          "pearson": -0.04884647643620779,
+          "r2_vs_consensus_global_train_mean": 0.0,
+          "reference_sse": 686.4506575644492,
+          "spearman": -0.05171007413014845
+        },
+        "IDFREE-PLM-MEAN-MLP": {
+          "mae": 0.20471665570639339,
+          "mse": 0.08751289914836517,
+          "n_genes": 8587,
+          "pearson": 0.22042490666937006,
+          "r2_vs_consensus_global_train_mean": -0.09472291519577669,
+          "reference_sse": 686.4506575644492,
+          "spearman": 0.13523185251157752
+        },
+        "PLM-RIDGE": {
+          "mae": 0.17895422375156592,
+          "mse": 0.07528420592967018,
+          "n_genes": 8587,
+          "pearson": 0.350670055408348,
+          "r2_vs_consensus_global_train_mean": 0.05824917028740273,
+          "reference_sse": 686.4506575644492,
+          "spearman": 0.17048732608308156
+        },
+        "SEQUENCE-KNN": {
+          "mae": 0.1617354061703222,
+          "mse": 0.07063085389966108,
+          "n_genes": 8587,
+          "pearson": 0.3879364335304385,
+          "r2_vs_consensus_global_train_mean": 0.11645923016768911,
+          "reference_sse": 686.4506575644492,
+          "spearman": 0.1882887651335648
+        },
+        "SEQUENCE-WEIGHTED-KNN": {
+          "mae": 0.16123271372109096,
+          "mse": 0.07039718780330548,
+          "n_genes": 8587,
+          "pearson": 0.39158767224358926,
+          "r2_vs_consensus_global_train_mean": 0.11938222360836048,
+          "reference_sse": 686.4506575644492,
+          "spearman": 0.19281881704169457
+        },
+        "STATIC-CONVEX-STACK": {
+          "mae": 0.1622237558364243,
+          "mse": 0.06932364441755941,
+          "n_genes": 8587,
+          "pearson": 0.3944797498750689,
+          "r2_vs_consensus_global_train_mean": 0.13281147296782514,
+          "reference_sse": 686.4506575644492,
+          "spearman": 0.19416856464154958
+        }
+      },
+      "n_genes": 8587,
+      "per_job_selected_baseline": {
+        "mae": 0.1581272712262513,
+        "mse": 0.0691945244888058,
+        "n_genes": 8587,
+        "pearson": 0.43620617264905215,
+        "r2_vs_consensus_global_train_mean": 0.13442666965529138,
+        "reference_sse": 686.4506575644492,
+        "spearman": 0.21601389089391024
+      },
+      "status": "evaluated"
+    },
+    "protein_length_quartile_edges": [
+      25.0,
+      280.0,
+      440.0,
+      703.0,
+      34350.0
+    ],
+    "protein_length_quartiles": {
+      "q1": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.21755458229559882,
+            "mse": 0.14169379645014143,
+            "n_genes": 4426,
+            "pearson": 0.5801684746099177,
+            "r2_vs_consensus_global_train_mean": 0.33945590340663445,
+            "reference_sse": 949.4244916011942,
+            "spearman": 0.40284453977746915
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.2240308217935925,
+            "mse": 0.1465783618184494,
+            "n_genes": 4426,
+            "pearson": 0.5645253467466202,
+            "r2_vs_consensus_global_train_mean": 0.31668517596977364,
+            "reference_sse": 949.4244916011942,
+            "spearman": 0.38090442599198976
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.21701028050484777,
+            "mse": 0.14198145053049277,
+            "n_genes": 4426,
+            "pearson": 0.579434657080187,
+            "r2_vs_consensus_global_train_mean": 0.3381149258240068,
+            "reference_sse": 949.4244916011942,
+            "spearman": 0.40041800426710317
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.2554491722258123,
+            "mse": 0.21451073014035105,
+            "n_genes": 4426,
+            "pearson": -0.04466993073732835,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 949.4244916011942,
+            "spearman": -0.03635051784799152
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.26000396087730193,
+            "mse": 0.18095621442016369,
+            "n_genes": 4426,
+            "pearson": 0.38814186921865657,
+            "r2_vs_consensus_global_train_mean": 0.1564234837960471,
+            "reference_sse": 949.4244916011942,
+            "spearman": 0.2945360426959867
+          },
+          "PLM-RIDGE": {
+            "mae": 0.24349370074619583,
+            "mse": 0.159226975854322,
+            "n_genes": 4426,
+            "pearson": 0.5028451559747888,
+            "r2_vs_consensus_global_train_mean": 0.2577202280270915,
+            "reference_sse": 949.4244916011942,
+            "spearman": 0.3430536431863901
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.2265755079529348,
+            "mse": 0.1492013891255406,
+            "n_genes": 4426,
+            "pearson": 0.5491083651404599,
+            "r2_vs_consensus_global_train_mean": 0.304457222126276,
+            "reference_sse": 949.4244916011942,
+            "spearman": 0.37485713423508
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.2259739728688212,
+            "mse": 0.14906268758532643,
+            "n_genes": 4426,
+            "pearson": 0.5494818374546129,
+            "r2_vs_consensus_global_train_mean": 0.3051038170081424,
+            "reference_sse": 949.4244916011942,
+            "spearman": 0.37594684206752355
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.22465733778530017,
+            "mse": 0.1465264901565056,
+            "n_genes": 4426,
+            "pearson": 0.5626209531367443,
+            "r2_vs_consensus_global_train_mean": 0.3169269898030953,
+            "reference_sse": 949.4244916011942,
+            "spearman": 0.380354536887623
+          }
+        },
+        "n_genes": 4426,
+        "per_job_selected_baseline": {
+          "mae": 0.21774997907266685,
+          "mse": 0.14163228850413032,
+          "n_genes": 4426,
+          "pearson": 0.5796069893128484,
+          "r2_vs_consensus_global_train_mean": 0.33974263939401794,
+          "reference_sse": 949.4244916011942,
+          "spearman": 0.40170333532831515
+        },
+        "status": "evaluated"
+      },
+      "q2": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.16988337849554289,
+            "mse": 0.08153017381898654,
+            "n_genes": 4450,
+            "pearson": 0.4925208216178811,
+            "r2_vs_consensus_global_train_mean": 0.2411859360792714,
+            "reference_sse": 478.1267121221832,
+            "spearman": 0.27721370147738095
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.18108455364979556,
+            "mse": 0.0865177890294534,
+            "n_genes": 4450,
+            "pearson": 0.43965811525148396,
+            "r2_vs_consensus_global_train_mean": 0.19476542217812487,
+            "reference_sse": 478.1267121221832,
+            "spearman": 0.23457345037131397
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.16917100805069818,
+            "mse": 0.08143520818231981,
+            "n_genes": 4450,
+            "pearson": 0.4932970646539039,
+            "r2_vs_consensus_global_train_mean": 0.24206979609472923,
+            "reference_sse": 478.1267121221832,
+            "spearman": 0.27554006709492096
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.200596136719657,
+            "mse": 0.10744420497127714,
+            "n_genes": 4450,
+            "pearson": -0.05463471333004578,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 478.1267121221832,
+            "spearman": -0.07376409549578936
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.23278184851950132,
+            "mse": 0.11309152910163268,
+            "n_genes": 4450,
+            "pearson": 0.24041004392779644,
+            "r2_vs_consensus_global_train_mean": -0.05256052787458598,
+            "reference_sse": 478.1267121221832,
+            "spearman": 0.16095982907925016
+          },
+          "PLM-RIDGE": {
+            "mae": 0.19910089774250417,
+            "mse": 0.09345619774977657,
+            "n_genes": 4450,
+            "pearson": 0.39276225618955946,
+            "r2_vs_consensus_global_train_mean": 0.1301885683387013,
+            "reference_sse": 478.1267121221832,
+            "spearman": 0.2140869412945748
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.18212388509775795,
+            "mse": 0.08777358642182934,
+            "n_genes": 4450,
+            "pearson": 0.431361371477172,
+            "r2_vs_consensus_global_train_mean": 0.18307751967364183,
+            "reference_sse": 478.1267121221832,
+            "spearman": 0.22794313617843387
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.18154237114673705,
+            "mse": 0.0872707539805482,
+            "n_genes": 4450,
+            "pearson": 0.43587613186237484,
+            "r2_vs_consensus_global_train_mean": 0.1877574597543149,
+            "reference_sse": 478.1267121221832,
+            "spearman": 0.23206008600851818
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.18277446045110288,
+            "mse": 0.08679066355163348,
+            "n_genes": 4450,
+            "pearson": 0.43942932986892674,
+            "r2_vs_consensus_global_train_mean": 0.192225736373264,
+            "reference_sse": 478.1267121221832,
+            "spearman": 0.23358540279025083
+          }
+        },
+        "n_genes": 4450,
+        "per_job_selected_baseline": {
+          "mae": 0.17006180269490934,
+          "mse": 0.08151770059027168,
+          "n_genes": 4450,
+          "pearson": 0.49141820920349627,
+          "r2_vs_consensus_global_train_mean": 0.2413020263674186,
+          "reference_sse": 478.1267121221832,
+          "spearman": 0.27775721354010857
+        },
+        "status": "evaluated"
+      },
+      "q3": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.17615311377793524,
+            "mse": 0.09326969181096473,
+            "n_genes": 4442,
+            "pearson": 0.5043796495090439,
+            "r2_vs_consensus_global_train_mean": 0.2567569283448218,
+            "reference_sse": 557.4272897043815,
+            "spearman": 0.3197219566310629
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.1850769252082445,
+            "mse": 0.09918733535847174,
+            "n_genes": 4442,
+            "pearson": 0.45637871121698226,
+            "r2_vs_consensus_global_train_mean": 0.2096006926822901,
+            "reference_sse": 557.4272897043815,
+            "spearman": 0.3076405154643362
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.17498704200237192,
+            "mse": 0.09312919569820163,
+            "n_genes": 4442,
+            "pearson": 0.5050833357938382,
+            "r2_vs_consensus_global_train_mean": 0.25787650706732157,
+            "reference_sse": 557.4272897043815,
+            "spearman": 0.3207063226571974
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.2082197796387844,
+            "mse": 0.12549015977136005,
+            "n_genes": 4442,
+            "pearson": -0.040547661321032054,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 557.4272897043815,
+            "spearman": -0.04944490072040997
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.2167581206194081,
+            "mse": 0.11365440572561597,
+            "n_genes": 4442,
+            "pearson": 0.326842272626994,
+            "r2_vs_consensus_global_train_mean": 0.0943161923397704,
+            "reference_sse": 557.4272897043815,
+            "spearman": 0.24755341755691876
+          },
+          "PLM-RIDGE": {
+            "mae": 0.19852303318282974,
+            "mse": 0.1044035445363121,
+            "n_genes": 4442,
+            "pearson": 0.4109714671388323,
+            "r2_vs_consensus_global_train_mean": 0.1680340137702212,
+            "reference_sse": 557.4272897043815,
+            "spearman": 0.28426047100947344
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.1866055100559423,
+            "mse": 0.10174670272033282,
+            "n_genes": 4442,
+            "pearson": 0.43366816097048116,
+            "r2_vs_consensus_global_train_mean": 0.1892057281167483,
+            "reference_sse": 557.4272897043815,
+            "spearman": 0.2936105833409093
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.18496877506449672,
+            "mse": 0.10035638417138254,
+            "n_genes": 4442,
+            "pearson": 0.4459110669610711,
+            "r2_vs_consensus_global_train_mean": 0.20028483225912386,
+            "reference_sse": 557.4272897043815,
+            "spearman": 0.30411081993648853
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.1848829872934671,
+            "mse": 0.09909658088171472,
+            "n_genes": 4442,
+            "pearson": 0.45661739953761954,
+            "r2_vs_consensus_global_train_mean": 0.2103238926281853,
+            "reference_sse": 557.4272897043815,
+            "spearman": 0.31025168396568187
+          }
+        },
+        "n_genes": 4442,
+        "per_job_selected_baseline": {
+          "mae": 0.17650741923724192,
+          "mse": 0.09343812397521846,
+          "n_genes": 4442,
+          "pearson": 0.5031095664333864,
+          "r2_vs_consensus_global_train_mean": 0.2554147341475985,
+          "reference_sse": 557.4272897043815,
+          "spearman": 0.3217436889130555
+        },
+        "status": "evaluated"
+      },
+      "q4": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.18746558835395094,
+            "mse": 0.09643774340015523,
+            "n_genes": 4450,
+            "pearson": 0.5401928557266611,
+            "r2_vs_consensus_global_train_mean": 0.2922062993309472,
+            "reference_sse": 606.3178546588254,
+            "spearman": 0.36941465159341985
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19113353482260756,
+            "mse": 0.10167917451516502,
+            "n_genes": 4450,
+            "pearson": 0.5111984581064262,
+            "r2_vs_consensus_global_train_mean": 0.25373741987675735,
+            "reference_sse": 606.3178546588254,
+            "spearman": 0.35063379581593396
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.18615203925941304,
+            "mse": 0.09622098786736662,
+            "n_genes": 4450,
+            "pearson": 0.5417243651575229,
+            "r2_vs_consensus_global_train_mean": 0.2937971515770059,
+            "reference_sse": 606.3178546588254,
+            "spearman": 0.3711317135991639
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.21590705331602625,
+            "mse": 0.13625120329411805,
+            "n_genes": 4450,
+            "pearson": -0.0012636823574226628,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 606.3178546588254,
+            "spearman": -0.005570677639345466
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.22532965887547218,
+            "mse": 0.12428587283756039,
+            "n_genes": 4450,
+            "pearson": 0.2990489095118905,
+            "r2_vs_consensus_global_train_mean": 0.08781816356314143,
+            "reference_sse": 606.3178546588254,
+            "spearman": 0.2203993804071072
+          },
+          "PLM-RIDGE": {
+            "mae": 0.2038561804184349,
+            "mse": 0.10811997654526212,
+            "n_genes": 4450,
+            "pearson": 0.4542257500904508,
+            "r2_vs_consensus_global_train_mean": 0.20646589585069997,
+            "reference_sse": 606.3178546588254,
+            "spearman": 0.3256164640997634
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19236901904851156,
+            "mse": 0.10378027187496904,
+            "n_genes": 4450,
+            "pearson": 0.4909186382139806,
+            "r2_vs_consensus_global_train_mean": 0.23831665801186186,
+            "reference_sse": 606.3178546588254,
+            "spearman": 0.3275791237175273
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19166335171008975,
+            "mse": 0.10309425549201133,
+            "n_genes": 4450,
+            "pearson": 0.4968734317711989,
+            "r2_vs_consensus_global_train_mean": 0.24335159617293523,
+            "reference_sse": 606.3178546588254,
+            "spearman": 0.33334526432097217
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19104040700188676,
+            "mse": 0.101735993706635,
+            "n_genes": 4450,
+            "pearson": 0.5101854655849909,
+            "r2_vs_consensus_global_train_mean": 0.25332040197088723,
+            "reference_sse": 606.3178546588254,
+            "spearman": 0.3506052253667126
+          }
+        },
+        "n_genes": 4450,
+        "per_job_selected_baseline": {
+          "mae": 0.18731337308092394,
+          "mse": 0.09658330978240932,
+          "n_genes": 4450,
+          "pearson": 0.5393210434243699,
+          "r2_vs_consensus_global_train_mean": 0.29113793164879276,
+          "reference_sse": 606.3178546588254,
+          "spearman": 0.36983265195213183
+        },
+        "status": "evaluated"
+      }
+    },
+    "singleton_components": {
+      "methods": {
+        "DECOMP-MEAN-ONLY": {
+          "mae": 0.21530762055588398,
+          "mse": 0.13471016917110612,
+          "n_genes": 9181,
+          "pearson": 0.5916257430226719,
+          "r2_vs_consensus_global_train_mean": 0.350722176964941,
+          "reference_sse": 1904.8456905221344,
+          "spearman": 0.4383100987884707
+        },
+        "FAMILY-DISTANCE-STACK": {
+          "mae": 0.22724081571762395,
+          "mse": 0.1455803803045175,
+          "n_genes": 9181,
+          "pearson": 0.5615166186416026,
+          "r2_vs_consensus_global_train_mean": 0.29832979215791033,
+          "reference_sse": 1904.8456905221344,
+          "spearman": 0.40948535358260085
+        },
+        "FAMILY-INDUCTIVE-DECOMP": {
+          "mae": 0.21455761419373712,
+          "mse": 0.134967560423571,
+          "n_genes": 9181,
+          "pearson": 0.5915005767884322,
+          "r2_vs_consensus_global_train_mean": 0.34948159926322053,
+          "reference_sse": 1904.8456905221344,
+          "spearman": 0.4384671675356178
+        },
+        "GLOBAL-TRAIN-MEAN": {
+          "mae": 0.262384236471569,
+          "mse": 0.20747692958524505,
+          "n_genes": 9181,
+          "pearson": -0.02904294782549841,
+          "r2_vs_consensus_global_train_mean": 0.0,
+          "reference_sse": 1904.8456905221344,
+          "spearman": -0.03389074699535729
+        },
+        "IDFREE-PLM-MEAN-MLP": {
+          "mae": 0.26078982550824326,
+          "mse": 0.17542982778556018,
+          "n_genes": 9181,
+          "pearson": 0.3823056120171696,
+          "r2_vs_consensus_global_train_mean": 0.15446103749341333,
+          "reference_sse": 1904.8456905221344,
+          "spearman": 0.3070843072799559
+        },
+        "PLM-RIDGE": {
+          "mae": 0.24137038572729277,
+          "mse": 0.15456351587587103,
+          "n_genes": 9181,
+          "pearson": 0.5050420854401059,
+          "r2_vs_consensus_global_train_mean": 0.2550327586549027,
+          "reference_sse": 1904.8456905221344,
+          "spearman": 0.3841356582869949
+        },
+        "SEQUENCE-KNN": {
+          "mae": 0.2297567110918775,
+          "mse": 0.14793941060208304,
+          "n_genes": 9181,
+          "pearson": 0.5420476192768303,
+          "r2_vs_consensus_global_train_mean": 0.28695970728976905,
+          "reference_sse": 1904.8456905221344,
+          "spearman": 0.38624757547825495
+        },
+        "SEQUENCE-WEIGHTED-KNN": {
+          "mae": 0.22852110410018173,
+          "mse": 0.14684219085370243,
+          "n_genes": 9181,
+          "pearson": 0.5491393307170948,
+          "r2_vs_consensus_global_train_mean": 0.29224810128409906,
+          "reference_sse": 1904.8456905221344,
+          "spearman": 0.3937159904508253
+        },
+        "STATIC-CONVEX-STACK": {
+          "mae": 0.2272131984962148,
+          "mse": 0.1451230528150509,
+          "n_genes": 9181,
+          "pearson": 0.5615153323688373,
+          "r2_vs_consensus_global_train_mean": 0.30053402513157523,
+          "reference_sse": 1904.8456905221344,
+          "spearman": 0.40989337502956374
+        }
+      },
+      "n_genes": 9181,
+      "per_job_selected_baseline": {
+        "mae": 0.21569415290383293,
+        "mse": 0.13509342881932865,
+        "n_genes": 9181,
+        "pearson": 0.5906751164788359,
+        "r2_vs_consensus_global_train_mean": 0.3488749371345238,
+        "reference_sse": 1904.8456905221344,
+        "spearman": 0.43883891883613346
+      },
+      "status": "evaluated"
+    }
+  },
+  "schema": "DepPLM-family-inductive-campaign-v2",
+  "secondary_context": {
+    "component_block_bootstrap_r2": {
+      "ci_high": 0.00032573714656850786,
+      "ci_low": -0.0005115088133058886,
+      "estimate": -7.513210152332306e-05
+    },
+    "mean_within_gene_pearson": 0.026122258796934427,
+    "mean_within_gene_spearman": 0.02484685090662833,
+    "mse": 0.024498029728320835,
+    "n_finite_entries": 19458250,
+    "n_genes_with_defined_pearson": 17768,
+    "n_genes_with_defined_spearman": 17768,
+    "r2_vs_zero": -7.513210152332306e-05
+  },
+  "seed_pair_dispersion": {
+    "pairs": {
+      "split-42|train-42": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.1885791286776924,
+            "mse": 0.10591750631001404,
+            "n_genes": 17768,
+            "pearson": 0.5246952238688761,
+            "r2_vs_consensus_global_train_mean": 0.27375869539267184,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.32613268047847815
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19592188012004258,
+            "mse": 0.1092552572966085,
+            "n_genes": 17768,
+            "pearson": 0.5021192559741382,
+            "r2_vs_consensus_global_train_mean": 0.2508728409630574,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.31581373892648734
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.18911507131669167,
+            "mse": 0.10576422016075726,
+            "n_genes": 17768,
+            "pearson": 0.525368046771212,
+            "r2_vs_consensus_global_train_mean": 0.27480972781302193,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.3291421519395292
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.2200090246330466,
+            "mse": 0.14584340719546743,
+            "n_genes": 17768,
+            "pearson": -0.019498611473636025,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.345659049065,
+            "spearman": -0.02896243294895893
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.2685849712617536,
+            "mse": 0.165534734961493,
+            "n_genes": 17768,
+            "pearson": 0.21000349797521706,
+            "r2_vs_consensus_global_train_mean": -0.13501692085151462,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.17086545719989024
+          },
+          "PLM-RIDGE": {
+            "mae": 0.21158591885681788,
+            "mse": 0.11676071100900517,
+            "n_genes": 17768,
+            "pearson": 0.4488093014538364,
+            "r2_vs_consensus_global_train_mean": 0.19941042756553262,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.29252001265241795
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19748038603783372,
+            "mse": 0.1113014412228683,
+            "n_genes": 17768,
+            "pearson": 0.4866904685916596,
+            "r2_vs_consensus_global_train_mean": 0.2368428346322441,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.30101244179445674
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19692269170958593,
+            "mse": 0.1107864476841276,
+            "n_genes": 17768,
+            "pearson": 0.4902178206019988,
+            "r2_vs_consensus_global_train_mean": 0.2403739749740934,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.30598780713997364
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.1964513723174666,
+            "mse": 0.10931172629855188,
+            "n_genes": 17768,
+            "pearson": 0.500856811950416,
+            "r2_vs_consensus_global_train_mean": 0.2504856516959575,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.31601573934895894
+          }
+        },
+        "per_job_selected_baseline": {
+          "mae": 0.1885791286776924,
+          "mse": 0.10591750631001404,
+          "n_genes": 17768,
+          "pearson": 0.5246952238688761,
+          "r2_vs_consensus_global_train_mean": 0.27375869539267184,
+          "reference_sse": 2591.345659049065,
+          "spearman": 0.32613268047847815
+        }
+      },
+      "split-42|train-43": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.19248996331403648,
+            "mse": 0.1060563864765923,
+            "n_genes": 17768,
+            "pearson": 0.5269566888445547,
+            "r2_vs_consensus_global_train_mean": 0.272806440030233,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.3322754398252195
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19592763518449968,
+            "mse": 0.10921669238807336,
+            "n_genes": 17768,
+            "pearson": 0.5023787988922,
+            "r2_vs_consensus_global_train_mean": 0.25113726778410295,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.3163029006400388
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.18931352896251297,
+            "mse": 0.10554586905149851,
+            "n_genes": 17768,
+            "pearson": 0.530026021182957,
+            "r2_vs_consensus_global_train_mean": 0.27630688914144674,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.33351932995233574
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.2200090246330466,
+            "mse": 0.14584340719546743,
+            "n_genes": 17768,
+            "pearson": -0.019498611473636025,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.345659049065,
+            "spearman": -0.02896243294895893
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.25569236529956824,
+            "mse": 0.14865200449802532,
+            "n_genes": 17768,
+            "pearson": 0.2432050381603728,
+            "r2_vs_consensus_global_train_mean": -0.0192576226554666,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.163389501361287
+          },
+          "PLM-RIDGE": {
+            "mae": 0.21158591885681788,
+            "mse": 0.11676071100900517,
+            "n_genes": 17768,
+            "pearson": 0.4488093014538364,
+            "r2_vs_consensus_global_train_mean": 0.19941042756553262,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.29252001265241795
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19748038603783372,
+            "mse": 0.1113014412228683,
+            "n_genes": 17768,
+            "pearson": 0.4866904685916596,
+            "r2_vs_consensus_global_train_mean": 0.2368428346322441,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.30101244179445674
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19692269170958593,
+            "mse": 0.1107864476841276,
+            "n_genes": 17768,
+            "pearson": 0.4902178206019988,
+            "r2_vs_consensus_global_train_mean": 0.2403739749740934,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.30598780713997364
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19610028738951557,
+            "mse": 0.10886399811848835,
+            "n_genes": 17768,
+            "pearson": 0.5043014097317918,
+            "r2_vs_consensus_global_train_mean": 0.25355557572388043,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.3178150867931741
+          }
+        },
+        "per_job_selected_baseline": {
+          "mae": 0.19248996331403648,
+          "mse": 0.1060563864765923,
+          "n_genes": 17768,
+          "pearson": 0.5269566888445547,
+          "r2_vs_consensus_global_train_mean": 0.272806440030233,
+          "reference_sse": 2591.345659049065,
+          "spearman": 0.3322754398252195
+        }
+      },
+      "split-42|train-44": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.1948603905858477,
+            "mse": 0.1060801713527139,
+            "n_genes": 17768,
+            "pearson": 0.5306364220001764,
+            "r2_vs_consensus_global_train_mean": 0.272643355002401,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.32717705738992797
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.1960344714334435,
+            "mse": 0.10918953772943203,
+            "n_genes": 17768,
+            "pearson": 0.5025708413864195,
+            "r2_vs_consensus_global_train_mean": 0.25132345829599156,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.3161912091796483
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.19512623451721212,
+            "mse": 0.10657616171204085,
+            "n_genes": 17768,
+            "pearson": 0.529621823117263,
+            "r2_vs_consensus_global_train_mean": 0.26924251317578207,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.32204511676357367
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.2200090246330466,
+            "mse": 0.14584340719546743,
+            "n_genes": 17768,
+            "pearson": -0.019498611473636025,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.345659049065,
+            "spearman": -0.02896243294895893
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.29155638521729654,
+            "mse": 0.16993658356373376,
+            "n_genes": 17768,
+            "pearson": 0.19527826459433165,
+            "r2_vs_consensus_global_train_mean": -0.16519894064169338,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.14545227122215001
+          },
+          "PLM-RIDGE": {
+            "mae": 0.21158591885681788,
+            "mse": 0.11676071100900517,
+            "n_genes": 17768,
+            "pearson": 0.4488093014538364,
+            "r2_vs_consensus_global_train_mean": 0.19941042756553262,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.29252001265241795
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19748038603783372,
+            "mse": 0.1113014412228683,
+            "n_genes": 17768,
+            "pearson": 0.4866904685916596,
+            "r2_vs_consensus_global_train_mean": 0.2368428346322441,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.30101244179445674
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19692269170958593,
+            "mse": 0.1107864476841276,
+            "n_genes": 17768,
+            "pearson": 0.4902178206019988,
+            "r2_vs_consensus_global_train_mean": 0.2403739749740934,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.30598780713997364
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19662593841170445,
+            "mse": 0.10926583599828761,
+            "n_genes": 17768,
+            "pearson": 0.5012039918469223,
+            "r2_vs_consensus_global_train_mean": 0.25080030630494343,
+            "reference_sse": 2591.345659049065,
+            "spearman": 0.3161399226339706
+          }
+        },
+        "per_job_selected_baseline": {
+          "mae": 0.1948603905858477,
+          "mse": 0.1060801713527139,
+          "n_genes": 17768,
+          "pearson": 0.5306364220001764,
+          "r2_vs_consensus_global_train_mean": 0.272643355002401,
+          "reference_sse": 2591.345659049065,
+          "spearman": 0.32717705738992797
+        }
+      },
+      "split-43|train-42": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.1913397865201688,
+            "mse": 0.10657936089358142,
+            "n_genes": 17768,
+            "pearson": 0.520973834777812,
+            "r2_vs_consensus_global_train_mean": 0.2692706850370634,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.3312134722008371
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19661418097864072,
+            "mse": 0.10967391815912692,
+            "n_genes": 17768,
+            "pearson": 0.49849399131761285,
+            "r2_vs_consensus_global_train_mean": 0.24805378439319958,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.32057092553440397
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.19170827429408047,
+            "mse": 0.10693997376628699,
+            "n_genes": 17768,
+            "pearson": 0.5193459135154506,
+            "r2_vs_consensus_global_train_mean": 0.26679825139484936,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.3341401453484061
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22000208708426683,
+            "mse": 0.14585340797363144,
+            "n_genes": 17768,
+            "pearson": -0.02240605672509061,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.5233528754834,
+            "spearman": -0.004234675911932887
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.25057375590564274,
+            "mse": 0.147387182819451,
+            "n_genes": 17768,
+            "pearson": 0.252975695990567,
+            "r2_vs_consensus_global_train_mean": -0.010515865670392088,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.19332149207666083
+          },
+          "PLM-RIDGE": {
+            "mae": 0.21225728905241759,
+            "mse": 0.11686128033597748,
+            "n_genes": 17768,
+            "pearson": 0.44910737098211473,
+            "r2_vs_consensus_global_train_mean": 0.19877579852570482,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.293787894966065
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19838802127264565,
+            "mse": 0.11250318052730549,
+            "n_genes": 17768,
+            "pearson": 0.47870757407839415,
+            "r2_vs_consensus_global_train_mean": 0.22865579837774697,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.3058805098839078
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19718772299019055,
+            "mse": 0.11135201100398454,
+            "n_genes": 17768,
+            "pearson": 0.48633974637681576,
+            "r2_vs_consensus_global_train_mean": 0.23654844579212275,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.31214517402997677
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19679921972454906,
+            "mse": 0.1097201273844087,
+            "n_genes": 17768,
+            "pearson": 0.497769340933541,
+            "r2_vs_consensus_global_train_mean": 0.2477369647458304,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.32086871369223674
+          }
+        },
+        "per_job_selected_baseline": {
+          "mae": 0.19336980764072717,
+          "mse": 0.10874322863150974,
+          "n_genes": 17768,
+          "pearson": 0.5052753649506766,
+          "r2_vs_consensus_global_train_mean": 0.2544347770662361,
+          "reference_sse": 2591.5233528754834,
+          "spearman": 0.32605694646109945
+        }
+      },
+      "split-43|train-43": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.19298556663703278,
+            "mse": 0.10697576861717834,
+            "n_genes": 17768,
+            "pearson": 0.5237772836114423,
+            "r2_vs_consensus_global_train_mean": 0.26655283477148317,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.32810709269026395
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19641965308909728,
+            "mse": 0.1096766434730557,
+            "n_genes": 17768,
+            "pearson": 0.4983235800160898,
+            "r2_vs_consensus_global_train_mean": 0.24803509909837773,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.3195340080504563
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.19095680078032762,
+            "mse": 0.10649697170643731,
+            "n_genes": 17768,
+            "pearson": 0.5276883094363065,
+            "r2_vs_consensus_global_train_mean": 0.26983556170527956,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.33111538567861637
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22000208708426683,
+            "mse": 0.14585340797363144,
+            "n_genes": 17768,
+            "pearson": -0.02240605672509061,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.5233528754834,
+            "spearman": -0.004234675911932887
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.2350425838812869,
+            "mse": 0.1411453978450477,
+            "n_genes": 17768,
+            "pearson": 0.272783461102975,
+            "r2_vs_consensus_global_train_mean": 0.032279054661752515,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.18884602769372305
+          },
+          "PLM-RIDGE": {
+            "mae": 0.21225728905241759,
+            "mse": 0.11686128033597748,
+            "n_genes": 17768,
+            "pearson": 0.44910737098211473,
+            "r2_vs_consensus_global_train_mean": 0.19877579852570482,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.293787894966065
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19838802127264565,
+            "mse": 0.11250318052730549,
+            "n_genes": 17768,
+            "pearson": 0.47870757407839415,
+            "r2_vs_consensus_global_train_mean": 0.22865579837774697,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.3058805098839078
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19718772299019055,
+            "mse": 0.11135201100398454,
+            "n_genes": 17768,
+            "pearson": 0.48633974637681576,
+            "r2_vs_consensus_global_train_mean": 0.23654844579212275,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.31214517402997677
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19660095918410853,
+            "mse": 0.10961467450297235,
+            "n_genes": 17768,
+            "pearson": 0.49850429418002234,
+            "r2_vs_consensus_global_train_mean": 0.24845997069338677,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.3218448136861286
+          }
+        },
+        "per_job_selected_baseline": {
+          "mae": 0.19298556663703278,
+          "mse": 0.10697576861717834,
+          "n_genes": 17768,
+          "pearson": 0.5237772836114423,
+          "r2_vs_consensus_global_train_mean": 0.26655283477148317,
+          "reference_sse": 2591.5233528754834,
+          "spearman": 0.32810709269026395
+        }
+      },
+      "split-43|train-44": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.19289924329755792,
+            "mse": 0.10777347452414945,
+            "n_genes": 17768,
+            "pearson": 0.5186721648191926,
+            "r2_vs_consensus_global_train_mean": 0.26108360427454946,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.32792100553361503
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19655159374560283,
+            "mse": 0.10965398945814561,
+            "n_genes": 17768,
+            "pearson": 0.4986615906260521,
+            "r2_vs_consensus_global_train_mean": 0.24819041953431942,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.31939083312175964
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.1911780172922529,
+            "mse": 0.10725068036777266,
+            "n_genes": 17768,
+            "pearson": 0.5201836962300419,
+            "r2_vs_consensus_global_train_mean": 0.26466798508292444,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.3284219019675304
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22000208708426683,
+            "mse": 0.14585340797363144,
+            "n_genes": 17768,
+            "pearson": -0.02240605672509061,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.5233528754834,
+            "spearman": -0.004234675911932887
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.28318383758628246,
+            "mse": 0.1655407341535419,
+            "n_genes": 17768,
+            "pearson": 0.1862247195428531,
+            "r2_vs_consensus_global_train_mean": -0.13498022743129656,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.14108623437745565
+          },
+          "PLM-RIDGE": {
+            "mae": 0.21225728905241759,
+            "mse": 0.11686128033597748,
+            "n_genes": 17768,
+            "pearson": 0.44910737098211473,
+            "r2_vs_consensus_global_train_mean": 0.19877579852570482,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.293787894966065
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19838802127264565,
+            "mse": 0.11250318052730549,
+            "n_genes": 17768,
+            "pearson": 0.47870757407839415,
+            "r2_vs_consensus_global_train_mean": 0.22865579837774697,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.3058805098839078
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19718772299019055,
+            "mse": 0.11135201100398454,
+            "n_genes": 17768,
+            "pearson": 0.48633974637681576,
+            "r2_vs_consensus_global_train_mean": 0.23654844579212275,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.31214517402997677
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19761177344494893,
+            "mse": 0.11001888764145307,
+            "n_genes": 17768,
+            "pearson": 0.49556485352767676,
+            "r2_vs_consensus_global_train_mean": 0.24568860494954536,
+            "reference_sse": 2591.5233528754834,
+            "spearman": 0.31857725918746693
+          }
+        },
+        "per_job_selected_baseline": {
+          "mae": 0.19434509841951275,
+          "mse": 0.10933128127098511,
+          "n_genes": 17768,
+          "pearson": 0.5049043896356848,
+          "r2_vs_consensus_global_train_mean": 0.2504029711067779,
+          "reference_sse": 2591.5233528754834,
+          "spearman": 0.3247555343167237
+        }
+      },
+      "split-44|train-42": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.19510918616636316,
+            "mse": 0.10723393893178827,
+            "n_genes": 17768,
+            "pearson": 0.5188098586355949,
+            "r2_vs_consensus_global_train_mean": 0.2646754687093189,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.3308364824314756
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19677180153305562,
+            "mse": 0.1095334799862633,
+            "n_genes": 17768,
+            "pearson": 0.49964208641228625,
+            "r2_vs_consensus_global_train_mean": 0.2489070565358079,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.31742544303449666
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.19480794617274289,
+            "mse": 0.10714586648038643,
+            "n_genes": 17768,
+            "pearson": 0.5187839417617568,
+            "r2_vs_consensus_global_train_mean": 0.2652793990945288,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.33146975473999396
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22000162137537774,
+            "mse": 0.14583212495789508,
+            "n_genes": 17768,
+            "pearson": -0.01557411615431593,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.14519625188,
+            "spearman": -0.0375318670372376
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.25024292883345634,
+            "mse": 0.14727897103002419,
+            "n_genes": 17768,
+            "pearson": 0.2593182876856265,
+            "r2_vs_consensus_global_train_mean": -0.009921312416909744,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.20416443675788515
+          },
+          "PLM-RIDGE": {
+            "mae": 0.2119380747073569,
+            "mse": 0.11644826889048694,
+            "n_genes": 17768,
+            "pearson": 0.4516913213723113,
+            "r2_vs_consensus_global_train_mean": 0.20149096830271063,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.2946897431449352
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19931928280444713,
+            "mse": 0.11255996161422754,
+            "n_genes": 17768,
+            "pearson": 0.47791357085685865,
+            "r2_vs_consensus_global_train_mean": 0.22815386769735346,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.30010487532396035
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19815589200815983,
+            "mse": 0.11170845717788916,
+            "n_genes": 17768,
+            "pearson": 0.4839036988929796,
+            "r2_vs_consensus_global_train_mean": 0.23399280364225772,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.3065849346553265
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19743786667977778,
+            "mse": 0.10962303243202351,
+            "n_genes": 17768,
+            "pearson": 0.4982696506432497,
+            "r2_vs_consensus_global_train_mean": 0.248292977533763,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.31816200702284353
+          }
+        },
+        "per_job_selected_baseline": {
+          "mae": 0.19510918616636316,
+          "mse": 0.10723393893178827,
+          "n_genes": 17768,
+          "pearson": 0.5188098586355949,
+          "r2_vs_consensus_global_train_mean": 0.2646754687093189,
+          "reference_sse": 2591.14519625188,
+          "spearman": 0.3308364824314756
+        }
+      },
+      "split-44|train-43": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.1921483333032658,
+            "mse": 0.10597625462122297,
+            "n_genes": 17768,
+            "pearson": 0.528216535867966,
+            "r2_vs_consensus_global_train_mean": 0.2732996611561368,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.32549344188608703
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19626054987278949,
+            "mse": 0.10934264555461229,
+            "n_genes": 17768,
+            "pearson": 0.501073822705885,
+            "r2_vs_consensus_global_train_mean": 0.25021564633867954,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.31857487078872454
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.18916003613927612,
+            "mse": 0.10561748815900787,
+            "n_genes": 17768,
+            "pearson": 0.529109312336315,
+            "r2_vs_consensus_global_train_mean": 0.275759794424569,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.3241136095208415
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22000162137537774,
+            "mse": 0.14583212495789508,
+            "n_genes": 17768,
+            "pearson": -0.01557411615431593,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.14519625188,
+            "spearman": -0.0375318670372376
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.25783140186933085,
+            "mse": 0.1494564080661938,
+            "n_genes": 17768,
+            "pearson": 0.23838661775911607,
+            "r2_vs_consensus_global_train_mean": -0.024852432955667858,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.15560209762249758
+          },
+          "PLM-RIDGE": {
+            "mae": 0.2119380747073569,
+            "mse": 0.11644826889048694,
+            "n_genes": 17768,
+            "pearson": 0.4516913213723113,
+            "r2_vs_consensus_global_train_mean": 0.20149096830271063,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.2946897431449352
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19931928280444713,
+            "mse": 0.11255996161422754,
+            "n_genes": 17768,
+            "pearson": 0.47791357085685865,
+            "r2_vs_consensus_global_train_mean": 0.22815386769735346,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.30010487532396035
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19815589200815983,
+            "mse": 0.11170845717788916,
+            "n_genes": 17768,
+            "pearson": 0.4839036988929796,
+            "r2_vs_consensus_global_train_mean": 0.23399280364225772,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.3065849346553265
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19638987507282418,
+            "mse": 0.10897002899526509,
+            "n_genes": 17768,
+            "pearson": 0.5030912731014967,
+            "r2_vs_consensus_global_train_mean": 0.25277075248867753,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.32078141612926087
+          }
+        },
+        "per_job_selected_baseline": {
+          "mae": 0.1921483333032658,
+          "mse": 0.10597625462122297,
+          "n_genes": 17768,
+          "pearson": 0.528216535867966,
+          "r2_vs_consensus_global_train_mean": 0.2732996611561368,
+          "reference_sse": 2591.14519625188,
+          "spearman": 0.32549344188608703
+        }
+      },
+      "split-44|train-44": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.19224420651406665,
+            "mse": 0.10666193008500129,
+            "n_genes": 17768,
+            "pearson": 0.5227833399928525,
+            "r2_vs_consensus_global_train_mean": 0.2685978475881299,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.32553141395049817
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19644540665469637,
+            "mse": 0.1093327761227336,
+            "n_genes": 17768,
+            "pearson": 0.5010784827703413,
+            "r2_vs_consensus_global_train_mean": 0.25028332300375966,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.3184722236187259
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.191609142292372,
+            "mse": 0.10660176761135753,
+            "n_genes": 17768,
+            "pearson": 0.5231222132471326,
+            "r2_vs_consensus_global_train_mean": 0.26901039368290225,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.32326341464017305
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22000162137537774,
+            "mse": 0.14583212495789508,
+            "n_genes": 17768,
+            "pearson": -0.01557411615431593,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.14519625188,
+            "spearman": -0.0375318670372376
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.28450009426276146,
+            "mse": 0.17029533872552563,
+            "n_genes": 17768,
+            "pearson": 0.21560860362881457,
+            "r2_vs_consensus_global_train_mean": -0.1677491415193575,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.1924227660186813
+          },
+          "PLM-RIDGE": {
+            "mae": 0.2119380747073569,
+            "mse": 0.11644826889048694,
+            "n_genes": 17768,
+            "pearson": 0.4516913213723113,
+            "r2_vs_consensus_global_train_mean": 0.20149096830271063,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.2946897431449352
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19931928280444713,
+            "mse": 0.11255996161422754,
+            "n_genes": 17768,
+            "pearson": 0.47791357085685865,
+            "r2_vs_consensus_global_train_mean": 0.22815386769735346,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.30010487532396035
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19815589200815983,
+            "mse": 0.11170845717788916,
+            "n_genes": 17768,
+            "pearson": 0.4839036988929796,
+            "r2_vs_consensus_global_train_mean": 0.23399280364225772,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.3065849346553265
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19791718868500444,
+            "mse": 0.11033242889087203,
+            "n_genes": 17768,
+            "pearson": 0.49359158808503245,
+            "r2_vs_consensus_global_train_mean": 0.24342850436604824,
+            "reference_sse": 2591.14519625188,
+            "spearman": 0.31756317178169247
+          }
+        },
+        "per_job_selected_baseline": {
+          "mae": 0.19224420651406665,
+          "mse": 0.10666193008500129,
+          "n_genes": 17768,
+          "pearson": 0.5227833399928525,
+          "r2_vs_consensus_global_train_mean": 0.2685978475881299,
+          "reference_sse": 2591.14519625188,
+          "spearman": 0.32553141395049817
+        }
+      }
+    },
+    "role": "descriptive_not_biological_replicates"
+  },
+  "selective_prediction": {
+    "0.5": {
+      "coverage_guarantee": "none",
+      "metrics": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.19343364258329052,
+            "mse": 0.1099785397096604,
+            "n_genes": 8884,
+            "pearson": 0.5397660747504609,
+            "r2_vs_consensus_global_train_mean": 0.29006145413274165,
+            "reference_sse": 1376.244961579123,
+            "spearman": 0.3621100931378319
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.20027071408933808,
+            "mse": 0.11493968144372937,
+            "n_genes": 8884,
+            "pearson": 0.5100991809037072,
+            "r2_vs_consensus_global_train_mean": 0.2580360630171248,
+            "reference_sse": 1376.244961579123,
+            "spearman": 0.3419097212083073
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.1926054486978989,
+            "mse": 0.11002908811183705,
+            "n_genes": 8884,
+            "pearson": 0.5394166665235557,
+            "r2_vs_consensus_global_train_mean": 0.2897351517538238,
+            "reference_sse": 1376.244961579123,
+            "spearman": 0.3623651795468501
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22569735919743458,
+            "mse": 0.15491276019575895,
+            "n_genes": 8884,
+            "pearson": -0.04663250882369044,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 1376.244961579123,
+            "spearman": -0.05372896351855344
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.23288187872493654,
+            "mse": 0.13623112999876286,
+            "n_genes": 8884,
+            "pearson": 0.35066816318772576,
+            "r2_vs_consensus_global_train_mean": 0.1205945215448273,
+            "reference_sse": 1376.244961579123,
+            "spearman": 0.2578864332430159
+          },
+          "PLM-RIDGE": {
+            "mae": 0.21505441688085775,
+            "mse": 0.12190443209163337,
+            "n_genes": 8884,
+            "pearson": 0.46166466643343046,
+            "r2_vs_consensus_global_train_mean": 0.21307688315935958,
+            "reference_sse": 1376.244961579123,
+            "spearman": 0.31665707304721835
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.20199646093478169,
+            "mse": 0.11748298557915969,
+            "n_genes": 8884,
+            "pearson": 0.49127342604603497,
+            "r2_vs_consensus_global_train_mean": 0.2416184087695573,
+            "reference_sse": 1376.244961579123,
+            "spearman": 0.3265501830483735
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.2008708535159957,
+            "mse": 0.11674351006919735,
+            "n_genes": 8884,
+            "pearson": 0.4962346695040416,
+            "r2_vs_consensus_global_train_mean": 0.24639190521380072,
+            "reference_sse": 1376.244961579123,
+            "spearman": 0.3347684318209327
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.2003038507315266,
+            "mse": 0.11486187079612754,
+            "n_genes": 8884,
+            "pearson": 0.5096408662658948,
+            "r2_vs_consensus_global_train_mean": 0.2585383499010684,
+            "reference_sse": 1376.244961579123,
+            "spearman": 0.34423816846994865
+          }
+        },
+        "n_genes": 8884,
+        "per_job_selected_baseline": {
+          "mae": 0.19354979743995335,
+          "mse": 0.11001847812984017,
+          "n_genes": 8884,
+          "pearson": 0.5386373626546975,
+          "r2_vs_consensus_global_train_mean": 0.28980364179933993,
+          "reference_sse": 1376.244961579123,
+          "spearman": 0.36395842863867683
+        },
+        "status": "evaluated"
+      },
+      "realized_fraction": 0.5,
+      "requested_fraction": 0.5,
+      "retained_gene_count": 8884,
+      "role": "descriptive_secondary_only"
+    },
+    "0.75": {
+      "coverage_guarantee": "none",
+      "metrics": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.19079721052946733,
+            "mse": 0.10677214948394805,
+            "n_genes": 13326,
+            "pearson": 0.5370661030900692,
+            "r2_vs_consensus_global_train_mean": 0.28760576699754137,
+            "reference_sse": 1997.2728555456745,
+            "spearman": 0.35900695235682206
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19821570582075101,
+            "mse": 0.11184517658397904,
+            "n_genes": 13326,
+            "pearson": 0.5059629428026815,
+            "r2_vs_consensus_global_train_mean": 0.2537580336008224,
+            "reference_sse": 1997.2728555456745,
+            "spearman": 0.3360120691707376
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.1898797749792576,
+            "mse": 0.10674432796946423,
+            "n_genes": 13326,
+            "pearson": 0.5371991597444021,
+            "r2_vs_consensus_global_train_mean": 0.28779139486555194,
+            "reference_sse": 1997.2728555456745,
+            "spearman": 0.35908447716084413
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22321335099098555,
+            "mse": 0.1498778970092807,
+            "n_genes": 13326,
+            "pearson": -0.04360655923646364,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 1997.2728555456745,
+            "spearman": -0.045278288248572746
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.23199791566343939,
+            "mse": 0.13356787876192192,
+            "n_genes": 13326,
+            "pearson": 0.33636466898792966,
+            "r2_vs_consensus_global_train_mean": 0.10882203829126902,
+            "reference_sse": 1997.2728555456745,
+            "spearman": 0.2516086428093283
+          },
+          "PLM-RIDGE": {
+            "mae": 0.21297481506204088,
+            "mse": 0.1191518172756288,
+            "n_genes": 13326,
+            "pearson": 0.45369001729057684,
+            "r2_vs_consensus_global_train_mean": 0.20500741167824976,
+            "reference_sse": 1997.2728555456745,
+            "spearman": 0.3079922739937334
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.19999358544755114,
+            "mse": 0.1141387748323864,
+            "n_genes": 13326,
+            "pearson": 0.48843109429657877,
+            "r2_vs_consensus_global_train_mean": 0.23845492157313408,
+            "reference_sse": 1997.2728555456745,
+            "spearman": 0.32512516355966237
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19904275327663504,
+            "mse": 0.11347229207200354,
+            "n_genes": 13326,
+            "pearson": 0.4930536048668145,
+            "r2_vs_consensus_global_train_mean": 0.24290175979065698,
+            "reference_sse": 1997.2728555456745,
+            "spearman": 0.3316957752550522
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19834522560798035,
+            "mse": 0.11180664164250492,
+            "n_genes": 13326,
+            "pearson": 0.5052888109175327,
+            "r2_vs_consensus_global_train_mean": 0.2540151425024221,
+            "reference_sse": 1997.2728555456745,
+            "spearman": 0.33789696267051866
+          }
+        },
+        "n_genes": 13326,
+        "per_job_selected_baseline": {
+          "mae": 0.190953286131781,
+          "mse": 0.10681706014691697,
+          "n_genes": 13326,
+          "pearson": 0.5362669774213765,
+          "r2_vs_consensus_global_train_mean": 0.28730611865802524,
+          "reference_sse": 1997.2728555456745,
+          "spearman": 0.35996634139533684
+        },
+        "status": "evaluated"
+      },
+      "realized_fraction": 0.75,
+      "requested_fraction": 0.75,
+      "retained_gene_count": 13326,
+      "role": "descriptive_secondary_only"
+    },
+    "0.9": {
+      "coverage_guarantee": "none",
+      "metrics": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.19057298721156052,
+            "mse": 0.10602894465673153,
+            "n_genes": 15992,
+            "pearson": 0.5465073545263062,
+            "r2_vs_consensus_global_train_mean": 0.29810384689815894,
+            "reference_sse": 2415.7631801472876,
+            "spearman": 0.3584880011503397
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19779319739272247,
+            "mse": 0.1114366740366285,
+            "n_genes": 15992,
+            "pearson": 0.5153455469434909,
+            "r2_vs_consensus_global_train_mean": 0.2623054669269733,
+            "reference_sse": 2415.7631801472876,
+            "spearman": 0.33715832150891245
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.1896083324510135,
+            "mse": 0.10598137757282966,
+            "n_genes": 15992,
+            "pearson": 0.5467321651320124,
+            "r2_vs_consensus_global_train_mean": 0.2984187340576332,
+            "reference_sse": 2415.7631801472876,
+            "spearman": 0.3585048843561087
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22348700144102498,
+            "mse": 0.15106072912376733,
+            "n_genes": 15992,
+            "pearson": -0.031658655774431436,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2415.7631801472876,
+            "spearman": -0.03657016389105662
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.23233472690945434,
+            "mse": 0.13423726197266417,
+            "n_genes": 15992,
+            "pearson": 0.33957898175998463,
+            "r2_vs_consensus_global_train_mean": 0.11136889943990236,
+            "reference_sse": 2415.7631801472876,
+            "spearman": 0.24931142699001427
+          },
+          "PLM-RIDGE": {
+            "mae": 0.2130406823164157,
+            "mse": 0.11922369546933374,
+            "n_genes": 15992,
+            "pearson": 0.4596942384603526,
+            "r2_vs_consensus_global_train_mean": 0.210756520500764,
+            "reference_sse": 2415.7631801472876,
+            "spearman": 0.3085764541618353
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.1994713609553483,
+            "mse": 0.11366808845751929,
+            "n_genes": 15992,
+            "pearson": 0.49813803624341707,
+            "r2_vs_consensus_global_train_mean": 0.24753382883258468,
+            "reference_sse": 2415.7631801472876,
+            "spearman": 0.32628443817062
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.19852431485793173,
+            "mse": 0.11293901269430494,
+            "n_genes": 15992,
+            "pearson": 0.5031348697497128,
+            "r2_vs_consensus_global_train_mean": 0.2523602040754648,
+            "reference_sse": 2415.7631801472876,
+            "spearman": 0.33221650577154277
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19794248538097417,
+            "mse": 0.11135476878470847,
+            "n_genes": 15992,
+            "pearson": 0.5148099653046161,
+            "r2_vs_consensus_global_train_mean": 0.2628476677517353,
+            "reference_sse": 2415.7631801472876,
+            "spearman": 0.338731321168981
+          }
+        },
+        "n_genes": 15992,
+        "per_job_selected_baseline": {
+          "mae": 0.1907365681327064,
+          "mse": 0.10609622301607097,
+          "n_genes": 15992,
+          "pearson": 0.5457739832631534,
+          "r2_vs_consensus_global_train_mean": 0.2976584739694722,
+          "reference_sse": 2415.7631801472876,
+          "spearman": 0.3591395115881943
+        },
+        "status": "evaluated"
+      },
+      "realized_fraction": 0.90004502476362,
+      "requested_fraction": 0.9,
+      "retained_gene_count": 15992,
+      "role": "descriptive_secondary_only"
+    },
+    "1": {
+      "coverage_guarantee": "none",
+      "metrics": {
+        "methods": {
+          "DECOMP-MEAN-ONLY": {
+            "mae": 0.18772915438553334,
+            "mse": 0.1031853864102776,
+            "n_genes": 17768,
+            "pearson": 0.54173384045685,
+            "r2_vs_consensus_global_train_mean": 0.2924784743004806,
+            "reference_sse": 2591.2963480865833,
+            "spearman": 0.3458416661714783
+          },
+          "FAMILY-DISTANCE-STACK": {
+            "mae": 0.19529731048714857,
+            "mse": 0.10844340729650724,
+            "n_genes": 17768,
+            "pearson": 0.5082939226628881,
+            "r2_vs_consensus_global_train_mean": 0.25642527831017503,
+            "reference_sse": 2591.2963480865833,
+            "spearman": 0.32211959903256726
+          },
+          "FAMILY-INDUCTIVE-DECOMP": {
+            "mae": 0.18679465908481466,
+            "mse": 0.10314384622695168,
+            "n_genes": 17768,
+            "pearson": 0.5419768404585814,
+            "r2_vs_consensus_global_train_mean": 0.2927633070166923,
+            "reference_sse": 2591.2963480865833,
+            "spearman": 0.3454352115583026
+          },
+          "GLOBAL-TRAIN-MEAN": {
+            "mae": 0.22000053427992547,
+            "mse": 0.14584063192743044,
+            "n_genes": 17768,
+            "pearson": -0.03462021435906663,
+            "r2_vs_consensus_global_train_mean": 0.0,
+            "reference_sse": 2591.2963480865833,
+            "spearman": -0.040057064306960787
+          },
+          "IDFREE-PLM-MEAN-MLP": {
+            "mae": 0.23369052850866623,
+            "mse": 0.13294093391975687,
+            "n_genes": 17768,
+            "pearson": 0.3144211448045648,
+            "r2_vs_consensus_global_train_mean": 0.08845064531873648,
+            "reference_sse": 2591.2963480865833,
+            "spearman": 0.23518531334407908
+          },
+          "PLM-RIDGE": {
+            "mae": 0.21120561856804204,
+            "mse": 0.11624904972841343,
+            "n_genes": 17768,
+            "pearson": 0.4525913925723522,
+            "r2_vs_consensus_global_train_mean": 0.20290355169155894,
+            "reference_sse": 2591.2963480865833,
+            "spearman": 0.2948811175884509
+          },
+          "SEQUENCE-KNN": {
+            "mae": 0.1968830649098989,
+            "mse": 0.11057737906202801,
+            "n_genes": 17768,
+            "pearson": 0.4919459724472077,
+            "r2_vs_consensus_global_train_mean": 0.24179306136680212,
+            "reference_sse": 2591.2963480865833,
+            "spearman": 0.3097524549702045
+          },
+          "SEQUENCE-WEIGHTED-KNN": {
+            "mae": 0.196001664197815,
+            "mse": 0.10989750145738554,
+            "n_genes": 17768,
+            "pearson": 0.4967385459122133,
+            "r2_vs_consensus_global_train_mean": 0.24645484591653433,
+            "reference_sse": 2591.2963480865833,
+            "spearman": 0.3152444545285233
+          },
+          "STATIC-CONVEX-STACK": {
+            "mae": 0.19580480452280072,
+            "mse": 0.10849036934424612,
+            "n_genes": 17768,
+            "pearson": 0.5070260895562376,
+            "r2_vs_consensus_global_train_mean": 0.25610326895572966,
+            "reference_sse": 2591.2963480865833,
+            "spearman": 0.32272555941639225
+          }
+        },
+        "n_genes": 17768,
+        "per_job_selected_baseline": {
+          "mae": 0.18787296802284498,
+          "mse": 0.10324550606571543,
+          "n_genes": 17768,
+          "pearson": 0.5409258410930798,
+          "r2_vs_consensus_global_train_mean": 0.2920662458656248,
+          "reference_sse": 2591.2963480865833,
+          "spearman": 0.34620151762969764
+        },
+        "status": "evaluated"
+      },
+      "realized_fraction": 1.0,
+      "requested_fraction": 1.0,
+      "retained_gene_count": 17768,
+      "role": "descriptive_secondary_only"
+    }
+  },
+  "status": "complete_and_replayed"
+}

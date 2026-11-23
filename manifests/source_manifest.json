@@ -1,0 +1,118 @@
+{
+  "analysis_code": {
+    "path": "D:/\u751f\u4fe12/DepPLM-paper/code/family_holdout.py",
+    "sha256": "0e898659a66ff8a9f795bd89245ccd93e694aa2ddf892111d815fd95046c574f"
+  },
+  "canonical_hits": {
+    "bytes": 1450686,
+    "path": "homology_hits.tsv.gz",
+    "sha256": "60b6a81866513ab7ccfbd73b29841eec478b19532e48dd419e0b8a9346694b8e"
+  },
+  "environment": {
+    "machine": "AMD64",
+    "os_uname": null,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "python_executable": "C:\\ProgramData\\anaconda3\\python.exe"
+  },
+  "exact_duplicate_groups": [
+    [
+      "CALM1",
+      "CALM2",
+      "CALM3"
+    ],
+    [
+      "TUBA3C",
+      "TUBA3D"
+    ]
+  ],
+  "inputs": {
+    "fasta": {
+      "bytes": 10717335,
+      "path": "D:/\u751f\u4fe12/DepPLM-paper/data/processed/gene_seqs.fa",
+      "record_count": 17768,
+      "sha256": "c2859d727d1fc8ac4fd7b2bb42b1970d196eb6592586770d0749985d8f863c9a",
+      "unique_sequence_count": 17765
+    },
+    "genes": {
+      "bytes": 130789,
+      "gene_count": 17768,
+      "path": "D:/\u751f\u4fe12/DepPLM-paper/data/processed/genes.txt",
+      "sha256": "d775cf65b51252a26c709e6b8f07db59480021af57d93f8b2b54fc7d8ddd86f9"
+    }
+  },
+  "schema": "depplm-family-holdout-v1",
+  "search": {
+    "alignment_mode": 3,
+    "command_argv": [
+      "wsl.exe",
+      "-e",
+      "/mnt/d/\u751f\u4fe12/DepPLM-paper/tools/mmseqs2/mmseqs/bin/mmseqs",
+      "easy-search",
+      "/mnt/d/\u751f\u4fe12/DepPLM-paper/data/processed/gene_seqs.fa",
+      "/mnt/d/\u751f\u4fe12/DepPLM-paper/data/processed/gene_seqs.fa",
+      "/mnt/d/\u751f\u4fe12/DepPLM-paper/results/.family_holdout_v1.staging/homology_hits.mmseqs.tsv",
+      "/mnt/d/\u751f\u4fe12/DepPLM-paper/results/.family_holdout_v1.staging/mmseqs_tmp",
+      "--search-type",
+      "1",
+      "--min-seq-id",
+      "0.20",
+      "-c",
+      "0.80",
+      "--cov-mode",
+      "0",
+      "--alignment-mode",
+      "3",
+      "-e",
+      "1e-5",
+      "-s",
+      "7.5",
+      "--max-seqs",
+      "20000",
+      "--threads",
+      "16",
+      "--format-output",
+      "query,target,pident,alnlen,qstart,qend,qlen,tstart,tend,tlen,qcov,tcov,evalue,bits"
+    ],
+    "coverage_mode": 0,
+    "evalue": 1e-05,
+    "format_output": "query,target,pident,alnlen,qstart,qend,qlen,tstart,tend,tlen,qcov,tcov,evalue,bits",
+    "main_identity_percentage": 30.0,
+    "max_sequences": 20000,
+    "minimum_bidirectional_coverage": 0.8,
+    "parse_counts": {
+      "canonical_nonself_pairs": 95073,
+      "raw_alignment_rows": 202619,
+      "self_alignment_rows": 17759
+    },
+    "raw_output": {
+      "bytes": 17297756,
+      "sha256": "9c9d9bb3119af8b4ef5d6f2582f902e3fafb6ce45a74087a4aa1aeeafb7fedb4"
+    },
+    "registered_identity_percentages": [
+      20.0,
+      30.0,
+      40.0,
+      50.0
+    ],
+    "sensitivity": 7.5,
+    "stderr_tail": "",
+    "threads": 16
+  },
+  "tool": {
+    "binary": {
+      "bytes": 17431368,
+      "path": "D:/\u751f\u4fe12/DepPLM-paper/tools/mmseqs2/mmseqs/bin/mmseqs",
+      "sha256": "b7ef6e0e33df5dd4fa9cf988cbd8b4988c11a3a1255d2c377f13e1bb40c157fb"
+    },
+    "name": "MMseqs2",
+    "release": "18-8cc5c",
+    "release_archive": {
+      "bytes": 17375777,
+      "path": "D:/\u751f\u4fe12/DepPLM-paper/tools/mmseqs2/mmseqs-linux-avx2-18-8cc5c.tar.gz",
+      "sha256": "bd9b0234da5949ad528d5b5f9ea4cda9c1e23dce14b46c0791d4d919a76e61ce"
+    },
+    "reported_commit": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f"
+  }
+}

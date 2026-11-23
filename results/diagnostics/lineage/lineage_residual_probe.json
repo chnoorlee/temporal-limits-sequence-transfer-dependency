@@ -1,0 +1,121 @@
+{
+ "alpha": 100.0,
+ "lineages": {
+  "Biliary Tract": {
+   "centered_sd": 0.036153621823031244,
+   "n_cells": 35,
+   "n_genes": 17768,
+   "r2_zero": -0.034657484467755406
+  },
+  "Bladder/Urinary Tract": {
+   "centered_sd": 0.03338758916572202,
+   "n_cells": 34,
+   "n_genes": 17642,
+   "r2_zero": -0.010950671072770035
+  },
+  "Bone": {
+   "centered_sd": 0.04425424092516447,
+   "n_cells": 35,
+   "n_genes": 17768,
+   "r2_zero": -0.003947981324888161
+  },
+  "Bowel": {
+   "centered_sd": 0.04138178288686338,
+   "n_cells": 59,
+   "n_genes": 17768,
+   "r2_zero": -0.019876668943213494
+  },
+  "Breast": {
+   "centered_sd": 0.044334906171766796,
+   "n_cells": 50,
+   "n_genes": 17768,
+   "r2_zero": -0.0017735630774389222
+  },
+  "CNS/Brain": {
+   "centered_sd": 0.03468371960914214,
+   "n_cells": 82,
+   "n_genes": 17768,
+   "r2_zero": -0.02480517138210936
+  },
+  "Esophagus/Stomach": {
+   "centered_sd": 0.029399153627104938,
+   "n_cells": 62,
+   "n_genes": 17768,
+   "r2_zero": 0.02257928670741316
+  },
+  "Head and Neck": {
+   "centered_sd": 0.03875862289874471,
+   "n_cells": 61,
+   "n_genes": 17768,
+   "r2_zero": -0.003288701117766024
+  },
+  "Kidney": {
+   "centered_sd": 0.0521147425799739,
+   "n_cells": 31,
+   "n_genes": 17768,
+   "r2_zero": -0.00262778978491518
+  },
+  "Lung": {
+   "centered_sd": 0.022127603418762225,
+   "n_cells": 123,
+   "n_genes": 17768,
+   "r2_zero": -0.005716519957338351
+  },
+  "Lymphoid": {
+   "centered_sd": 0.05746934080300155,
+   "n_cells": 91,
+   "n_genes": 17768,
+   "r2_zero": 0.002197793970259432
+  },
+  "Myeloid": {
+   "centered_sd": 0.057660847629870164,
+   "n_cells": 39,
+   "n_genes": 17768,
+   "r2_zero": -0.008732531975522928
+  },
+  "Ovary/Fallopian Tube": {
+   "centered_sd": 0.03166173029512546,
+   "n_cells": 56,
+   "n_genes": 17768,
+   "r2_zero": 0.011529676357780905
+  },
+  "Pancreas": {
+   "centered_sd": 0.041719305246689306,
+   "n_cells": 45,
+   "n_genes": 17768,
+   "r2_zero": -0.015263727945951322
+  },
+  "Peripheral Nervous System": {
+   "centered_sd": 0.046559022174486396,
+   "n_cells": 37,
+   "n_genes": 17768,
+   "r2_zero": -0.008145433198759156
+  },
+  "Skin": {
+   "centered_sd": 0.03958417715421258,
+   "n_cells": 73,
+   "n_genes": 17768,
+   "r2_zero": -0.018541735409489224
+  },
+  "Soft Tissue": {
+   "centered_sd": 0.03925512666322978,
+   "n_cells": 45,
+   "n_genes": 17768,
+   "r2_zero": -0.009977704175703872
+  },
+  "Uterus": {
+   "centered_sd": 0.04002616257030113,
+   "n_cells": 34,
+   "n_genes": 17768,
+   "r2_zero": 0.0071779728320851
+  }
+ },
+ "minimum_cells": 30,
+ "summary": {
+  "fraction_r2_above_0.01": 0.1111111111111111,
+  "max_r2": 0.02257928670741316,
+  "mean_r2": -0.006934497442560157,
+  "median_r2": -0.006930976578048753,
+  "n_lineages": 18
+ }
+}

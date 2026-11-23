@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\title{Supplementary Methods\\Temporal limits of protein-sequence transfer for cancer dependency prediction under unseen similarity components}
+\date{}
+\begin{document}
+\maketitle
+\small
+
+\section*{S1. Outcome-access boundary and data roles}
+
+DepMap 24Q4 CRISPR gene-effect data were treated as post-discovery development
+data. Results from that release and a deliberately non-scientific engineering
+pilot had been inspected before protocol version 1.4 was locked; no 24Q4 result
+is described as prospective confirmation. DepMap 26Q3 was the designated
+same-platform time-out release. Before the canonical 26Q3 outcome file was
+downloaded or parsed for this analysis, a server-side freeze bound the protocol,
+analysis lock, validator, complete 24Q4 campaign, consensus predictions and the
+prespecified organoid identifiers by SHA-256. An append-only access ledger then
+recorded acquisition, retrieval, user-authorized source verification and
+validation in chronological order. The source receipt records provenance and
+does not independently prove source authenticity or absence of access outside
+this project workflow.
+
+The organoid source had been accessed previously and was therefore defined as a
+secondary, non-outcome-naive analysis. No endpoint, threshold, seed, fold, gene
+mapping or failed gate was changed after observing 26Q3 outcomes. A post-access
+compatibility amendment accepted the official CSV's empty first header as its
+row-index label; it changed neither source bytes nor numeric values and is
+disclosed as non-prospective.
+
+\section*{S2. 26Q3 time-out evaluation and processing correction}
+
+The primary temporal cohort comprised ModelIDs present in 26Q3 and absent from
+the hash-bound 24Q4 cell-model list. Gene columns were accepted only in the
+format \texttt{SYMBOL (ENTREZ\_ID)} and mapped by exact symbol, without synonym
+rescue. A gene required a frozen 24Q4 consensus prediction and finite 26Q3
+scores in at least 80\% of eligible new models. The frozen primary, selected
+baseline and global-reference predictions were evaluated without refitting or
+recalibration. Temporal confirmation required positive method $R^2$,
+$\Delta R^2\geq0.01$, and a paired component-bootstrap 95\% lower bound above
+zero.
+
+Because 26Q3 included a processing correction, the protocol also specified a
+secondary shared-model sensitivity. For each eligible gene, the median 26Q3
+minus 24Q4 effect among exact shared ModelIDs was added to every frozen 24Q4
+prediction and to the frozen reference before scoring on the unchanged new-model
+cohort. This correction uses 26Q3 outcomes; it cannot replace the uncorrected
+primary analysis or alter its gates.
+
+\section*{S3. Organoid crosswalk and reproducibility controls}
+
+The 26Q3 model list was compared with 256 organoid source labels frozen before
+26Q3 outcome access. Exact string equality was the registered first-stage rule.
+If identifier namespaces differed and no frozen authoritative crosswalk resolved
+them, overlap had to remain unknown rather than be declared zero. In that case,
+the time-out and organoid analyses could not be presented as independent
+replications. After temporal scoring, identifiers were reconciled using the
+26Q3 \texttt{Model.csv} and the published organoid data-availability table
+(Supplementary Table 2 of Herranz-Ors et al.). Each published sample ID and
+Sanger alias was matched exactly against cell-line names, HCMI IDs and Sanger
+IDs across the entire 26Q3 metadata catalogue. Each accepted link identified one
+model in each source. Linked ModelIDs were assigned to the frozen release
+cohorts, and the organoid study's individual IDs were used to count related
+samples. Unmatched entries remained unresolved. This retrospective audit used
+metadata alone.
+
+Each job and aggregate was published immutably with a completion record written
+last. The aggregate was independently replayed on the designated server and
+bound the complete roster, input files, metrics and consensus arrays by SHA-256.
+The manuscript's numeric macros and primary table were generated only after
+verifying the terminal completion schemas, file sizes and metrics hashes. Passing
+software tests or integrity checks was not treated as evidence of novelty,
+biological mechanism or submission readiness.
+
+\section*{S4. Diagnostic re-run and exploratory probes}
+
+The original campaign archives were produced on a designated analysis host whose
+per-job prediction storage is no longer reachable. To answer reviewer requests,
+the frozen implementation was re-run on a second Linux GPU server. The diagnostic
+lock is identical in all scientific fields to the primary lock except for the
+registered host identity; all input hashes, seeds, folds, grids, solver settings,
+endpoints and gates are unchanged, and the code differs only in path and host
+handling. The re-run reproduced the locked headline development metrics to
+within $8.7\times10^{-10}$ and the locked 26Q3 cohort and metrics to the same
+numerical precision. Diagnostic outputs are labelled post hoc; they explain the
+locked result and do not replace it or alter any gate.
+
+Distance strata were defined on the consensus nearest-training cosine distance
+across all genes. For each stratum, method and baseline $R^2$ were recomputed
+relative to the consensus global reference, with paired 95\% intervals from
+resampling whole sequence components. Learned coefficients $(a_m,b_m)$ were read
+from each job's final constrained fit together with the SLSQP status, iterations
+and constraint residuals. Identity-threshold sensitivity used the registered
+secondary contract: five outer folds, split seed 42 and training seed 42 at
+20\%, 40\% and 50\% identity, each analysed separately and never pooled with the
+primary 30\% result.
+
+Additional post hoc probes used the same five folds (split seed 42, training
+seed 42) and outer-test labels only for scoring. Candidate KNN and ridge
+hyperparameters were selected on outer-training genes by leave-one-out or
+three-fold component cross-validation. A James--Stein-style scalar shrinkage of
+the KNN prediction toward the outer-training global mean was fitted on
+outer-training genes and clipped to $[0,1.5]$. A sign-relaxed distance stack
+retained only $\sum_m a_m=1$ and $\sum_m b_m=0$ and was fitted on out-of-fold
+base predictions. The t6 layer probe recomputed the residue-chunked embedding at
+hidden layers 2, 4 and 6 with the same pooling and reran the five-fold campaign.
+
+Lineage-specific means were computed for every Oncotree lineage with at least 30
+models. Each lineage mean was centred on the pan-context gene mean, and a ridge
+model on the frozen embedding was fitted on outer-training genes and evaluated on
+outer-test genes under the same five folds. GO biological-process annotations
+were taken from the Open Targets 26.09 target release; the 500 largest positive
+and 500 largest negative residuals were tested against the annotated background
+with one-sided Fisher tests and Benjamini--Hochberg correction.
+
+\end{document}

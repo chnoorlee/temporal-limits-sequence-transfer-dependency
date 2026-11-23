@@ -1,0 +1,8 @@
+{
+ "input": {
+  "fasta": {
+   "path": "data/processed/gene_seqs.fa",
+   "sha256": "c2859d727d1fc8ac4fd7b2bb42b1970d196eb6592586770d0749985d8f863c9a"
+  }
+ }
+}

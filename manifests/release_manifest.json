@@ -1,0 +1,152 @@
+{
+  "files": [
+    {
+      "bytes": 1450686,
+      "path": "homology_hits.tsv.gz",
+      "sha256": "60b6a81866513ab7ccfbd73b29841eec478b19532e48dd419e0b8a9346694b8e"
+    },
+    {
+      "bytes": 1876238,
+      "path": "identity_20/family_units.tsv",
+      "sha256": "a4c714f02287e0e99ff98a5180ed8b085a6fd798d3633d86a3d4fab61f91ac52"
+    },
+    {
+      "bytes": 871635,
+      "path": "identity_20/fold_manifest.tsv",
+      "sha256": "bf165538bda47da5a5baac32564124381808611f397b833e2648d208ffa40bd0"
+    },
+    {
+      "bytes": 1283,
+      "path": "identity_20/split_summary.json",
+      "sha256": "251f67a17049c7e5fb2442ecb8819800c75b6fe1376af015cf96152e4d455668"
+    },
+    {
+      "bytes": 1875507,
+      "path": "identity_30/family_units.tsv",
+      "sha256": "1f28929d88581fbfa5af9d39e2bde0db222ec0db9d84cbab5cb52b497c88b916"
+    },
+    {
+      "bytes": 864925,
+      "path": "identity_30/fold_manifest.tsv",
+      "sha256": "5dddb00cc3fb6ba5e609dbe3ed2a96abf1581b04ff4c57695cabfdc786bfa281"
+    },
+    {
+      "bytes": 1283,
+      "path": "identity_30/split_summary.json",
+      "sha256": "95ec5257ae4afc9c2613fbc76348b7300bab7eb37d47954963e4737c87c4b466"
+    },
+    {
+      "bytes": 1874189,
+      "path": "identity_40/family_units.tsv",
+      "sha256": "01427816f04c5a276cb74349abd29dbb3af1e5bc37230be6a166d2cabe771d41"
+    },
+    {
+      "bytes": 850713,
+      "path": "identity_40/fold_manifest.tsv",
+      "sha256": "8e564403a147927eae408253580f3b2da175517a0a6ebedacffe6549ce617822"
+    },
+    {
+      "bytes": 1284,
+      "path": "identity_40/split_summary.json",
+      "sha256": "da3a0ebdfa1d895eac68fdc5c4239a7bf76138738ccfab65ae2b04af704959a3"
+    },
+    {
+      "bytes": 1873333,
+      "path": "identity_50/family_units.tsv",
+      "sha256": "0bdfa74c35e3c6d9f2a0eb87ec13e673481bab9e2cf090aa8063eb437891597a"
+    },
+    {
+      "bytes": 831287,
+      "path": "identity_50/fold_manifest.tsv",
+      "sha256": "548ea6620dac02f835054e8de72030c802ccff5f2855b06629104ab6f8b66ec9"
+    },
+    {
+      "bytes": 1283,
+      "path": "identity_50/split_summary.json",
+      "sha256": "294957e659d1f5cda13432e96e32fd28a59faac2283d633f9919eb0965471a97"
+    },
+    {
+      "bytes": 3603,
+      "path": "source_manifest.json",
+      "sha256": "0098b31c76ee1b0619dd71257ab893013e0d725eae6839c67b3db5657b577c51"
+    }
+  ],
+  "main_identity_percentage": 30.0,
+  "schema": "depplm-family-holdout-v1",
+  "scientific_use": "eligible_for_family_holdout_split_use",
+  "status": "complete",
+  "thresholds": [
+    {
+      "component_count": 10932,
+      "fold_gene_counts": [
+        3554,
+        3554,
+        3554,
+        3553,
+        3553
+      ],
+      "identity_percent": 20.0,
+      "largest_component_size": 554,
+      "qualifying_edges": 95073,
+      "summary": {
+        "bytes": 1283,
+        "path": "identity_20/split_summary.json",
+        "sha256": "251f67a17049c7e5fb2442ecb8819800c75b6fe1376af015cf96152e4d455668"
+      }
+    },
+    {
+      "component_count": 11577,
+      "fold_gene_counts": [
+        3554,
+        3554,
+        3554,
+        3553,
+        3553
+      ],
+      "identity_percent": 30.0,
+      "largest_component_size": 393,
+      "qualifying_edges": 83009,
+      "summary": {
+        "bytes": 1283,
+        "path": "identity_30/split_summary.json",
+        "sha256": "95ec5257ae4afc9c2613fbc76348b7300bab7eb37d47954963e4737c87c4b466"
+      }
+    },
+    {
+      "component_count": 12772,
+      "fold_gene_counts": [
+        3554,
+        3554,
+        3554,
+        3553,
+        3553
+      ],
+      "identity_percent": 40.0,
+      "largest_component_size": 347,
+      "qualifying_edges": 46807,
+      "summary": {
+        "bytes": 1284,
+        "path": "identity_40/split_summary.json",
+        "sha256": "da3a0ebdfa1d895eac68fdc5c4239a7bf76138738ccfab65ae2b04af704959a3"
+      }
+    },
+    {
+      "component_count": 14117,
+      "fold_gene_counts": [
+        3554,
+        3554,
+        3554,
+        3553,
+        3553
+      ],
+      "identity_percent": 50.0,
+      "largest_component_size": 214,
+      "qualifying_edges": 9034,
+      "summary": {
+        "bytes": 1283,
+        "path": "identity_50/split_summary.json",
+        "sha256": "294957e659d1f5cda13432e96e32fd28a59faac2283d633f9919eb0965471a97"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived artifacts, please cite the manuscript and the archived release."
+title: "Temporal limits of protein-sequence transfer for cancer dependency prediction under unseen similarity components"
+type: software
+version: "1.1.0-round2"
+date-released: "2026-11-23"
+license: MIT
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+repository-code: "TODO: author-approved repository URL"
+doi: "TODO: archival DOI"
+abstract: >-
+  Code, protocols, aggregate metrics, per-gene predictions and sequence-component
+  identifiers for a component-disjoint evaluation of frozen ESM-2 embeddings in
+  cancer dependency prediction, including the 24Q4 development campaign, the
+  26Q3 time-out analysis and post-review diagnostics.

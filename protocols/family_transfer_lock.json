@@ -1,0 +1,414 @@
+{
+  "schema": "DepPLM-family-transfer-analysis-lock-v2",
+  "protocol_version": "1.4",
+  "locked_date": "2026-10-27",
+  "status": "post-discovery-development-and-timeout-confirmation-lock",
+  "implementation_namespace": "family_inductive_v2",
+  "execution_scope": "remote-server-only",
+  "designated_server": {
+    "hostname": "user",
+    "machine_id_sha256": "b2bb6e825d62892dc430d8999743a2c2eb6fc98178338fc1735fa6442a1368f8",
+    "ipv4": "192.168.50.7"
+  },
+  "data_roles": {
+    "depmap_24q4": "development_only",
+    "depmap_26q3": "single_access_same_platform_time_out_confirmation",
+    "organoid_3d": "previously_accessed_orthogonal_assay_secondary_validation"
+  },
+  "primary_split": {
+    "identity_percent": 30.0,
+    "minimum_bidirectional_coverage": 0.8,
+    "outer_folds": 5,
+    "split_seeds": [42, 43, 44],
+    "training_seeds": [42, 43, 44]
+  },
+  "sensitivity_identity_percentages": [20.0, 40.0, 50.0],
+  "sensitivity_contract": {
+    "outer_folds": 5,
+    "split_seeds": [42],
+    "training_seeds": [42],
+    "role": "secondary_cannot_replace_primary_30_percent_analysis"
+  },
+  "locked_assets": {
+    "protein_representation": {
+      "repository": "facebook/esm2_t6_8M_UR50D",
+      "model_revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+      "pooling": "inverse-coverage-weighted_residue_mean_across_deterministic_overlapping_windows",
+      "embedding_path": "data/processed/esm2_t6_8M_residue_chunked.npy",
+      "embedding_sha256": "60a3c09611afd1141bc6898f91523cf8b75cdd6dbf90f474f88b823318dab631",
+      "names_path": "data/processed/esm2_t6_8M_residue_chunked.names.txt",
+      "names_sha256": "0ec8b13f99cafd082da85f6fe0e086076d26bbc99878395caad9cf5a43128398",
+      "manifest_path": "data/processed/esm2_t6_8M_residue_chunked.manifest.json",
+      "manifest_sha256": "b8647c0d848f8f4cb8faa2ddbd51a3598b26077ebae0f650cdd1666fa2f09d79"
+    },
+    "dependency_matrix": {
+      "release": "DepMap_24Q4_Public",
+      "path": "data/processed/gene_effect.npy",
+      "sha256": "db03779d16841dbf98671bd5827336bae2031b7c76451163e769b474d4264c5a"
+    },
+    "gene_manifest": {
+      "path": "data/processed/genes.txt",
+      "sha256": "d775cf65b51252a26c709e6b8f07db59480021af57d93f8b2b54fc7d8ddd86f9"
+    },
+    "cell_manifest": {
+      "path": "data/processed/cell_lines.txt",
+      "sha256": "a70121fdaf136915e4e82e781fc25959477c220499a455f5c235f9574a2b7683"
+    },
+    "family_release": {
+      "release_manifest_path": "results/family_holdout_v1/release_manifest.json",
+      "release_manifest_sha256": "1067b40db70998e3ffcd414c2912dd44341fccca9b2f0d43c2ab85d4dcde3c64",
+      "primary_fold_manifest_path": "results/family_holdout_v1/identity_30/fold_manifest.tsv",
+      "primary_fold_manifest_sha256": "5dddb00cc3fb6ba5e609dbe3ed2a96abf1581b04ff4c57695cabfdc786bfa281",
+      "sensitivity_fold_manifests": {
+        "20": {"path": "results/family_holdout_v1/identity_20/fold_manifest.tsv", "sha256": "bf165538bda47da5a5baac32564124381808611f397b833e2648d208ffa40bd0"},
+        "40": {"path": "results/family_holdout_v1/identity_40/fold_manifest.tsv", "sha256": "8e564403a147927eae408253580f3b2da175517a0a6ebedacffe6549ce617822"},
+        "50": {"path": "results/family_holdout_v1/identity_50/fold_manifest.tsv", "sha256": "548ea6620dac02f835054e8de72030c802ccff5f2855b06629104ab6f8b66ec9"}
+      }
+    }
+  },
+  "primary_endpoint": "held_out_component_gene_pan_context_mean_dependency",
+  "primary_metric": "gene_mean_r2_vs_consensus_per_job_outer_training_global_prediction",
+  "primary_method": "FAMILY-DISTANCE-STACK",
+  "primary_method_contract": {
+    "representation": "frozen_esm_only_no_gene_identifier",
+    "base_methods": ["GLOBAL-TRAIN-MEAN", "SEQUENCE-WEIGHTED-KNN", "PLM-RIDGE"],
+    "formula": "sum_m((a_m+b_m*z)*p_m)",
+    "distance": "one_minus_maximum_outer_training_cosine_similarity",
+    "distance_scaling": "clip((d-q10)/(q90-q10),0,1)",
+    "distance_quantiles": [0.1, 0.9],
+    "degenerate_quantile_action": "fail_closed",
+    "constraints": [
+      "sum_a_equals_one",
+      "sum_b_equals_zero",
+      "endpoint_weights_nonnegative",
+      "weighted_knn_slope_nonpositive",
+      "global_slope_nonnegative"
+    ],
+    "objective": "component_cross_fitted_mse_plus_lambda_sum_squared_slopes",
+    "inner_crossfit_folds": 3,
+    "outer_refit_crossfit_folds": 4,
+    "crossfit_assignment": "deterministic_component_hash_with_training_seed",
+    "candidate_grid": {
+      "knn_neighbors": [5, 20, 50],
+      "knn_temperature": [0.03, 0.1, 0.3],
+      "ridge_alpha": [0.1, 1.0, 10.0, 100.0],
+      "gate_lambda": [0.0, 0.01, 0.1]
+    },
+    "implementation_contract": {
+      "solver": "scipy.optimize.SLSQP",
+      "max_iterations": 2000,
+      "ftol": 1e-12,
+      "constraint_tolerance": 1e-8,
+      "initialization": "equal_endpoint_weights",
+      "objective_weighting": "gene_weighted_component_cross_fitted_mse",
+      "failure_conditions": [
+        "solver_unsuccessful",
+        "nonfinite_objective_or_coefficient",
+        "constraint_violation_above_tolerance"
+      ],
+      "component_fold_hash": "sha256(utf8(decimal_training_seed)+NUL+utf8(component_id))_first_8_bytes_big_endian_mod_n_folds",
+      "distance_stack_weight_arrays": "one_weight_per_query_gene_equal_to_a_m_plus_b_m_times_z",
+      "selected_baseline_name_array": "length_one_fixed_width_unicode",
+      "static_stack_grid": "one_static_fit_per_knn_k_temperature_and_ridge_alpha_without_lambda_duplication",
+      "audit": "record_scipy_version_coefficients_constraint_residuals_and_solver_status"
+    },
+    "selection_rule": "max_inner_component_heldout_r2_then_min_mse_then_canonical_config",
+    "required_ablation": "STATIC-CONVEX-STACK"
+  },
+  "training_contract": {
+    "optimizer": "AdamW",
+    "inner_max_epochs": 30,
+    "patience": 5,
+    "batch_size": 64,
+    "gene_subsample": 6000,
+    "top_mut": 5000,
+    "n_expr_pc": 128,
+    "neural_context_role": "secondary_only",
+    "mean_only_ablation_architecture": "matches_neural_context_sequence_encoder_and_mean_head",
+    "mean_only_ablation_steps_per_epoch": "matches_neural_context_cell_batches",
+    "baseline_selection_rule": "per_job_max_inner_r2_then_min_mse_then_lexicographic_method_name",
+    "outer_test_outcomes_forbidden_for_all_selection": true,
+    "baseline_grids": {
+      "uniform_knn_neighbors": [5, 20, 50],
+      "ridge_alpha": [0.1, 1.0, 10.0, 100.0]
+    },
+    "mean_mlp_grid": {
+      "hidden": [128, 256],
+      "learning_rate": [0.001, 0.0003],
+      "weight_decay": [0.00001]
+    },
+    "decomposition_grid": {
+      "hidden": [128],
+      "rank": [32, 64],
+      "learning_rate": [0.001, 0.0003],
+      "weight_decay": [0.00001],
+      "gene_mean_loss_weight": [1.0],
+      "context_residual_loss_weight": [1.0]
+    },
+    "pilot": {
+      "cells": 64,
+      "genes": 1000,
+      "inner_max_epochs": 2,
+      "patience": 1,
+      "gene_subsample": 256,
+      "bootstrap_replicates": 200,
+      "scientific_use": "forbidden"
+    }
+  },
+  "bootstrap": {
+    "unit": "sequence_component",
+    "replicates": 5000,
+    "confidence_level": 0.95,
+    "seed": 20261027
+  },
+  "coverage_levels": [1.0, 0.9, 0.75, 0.5],
+  "selective_risk_score": {
+    "type": "validation_fitted_nonnegative_distance_to_absolute_error_score",
+    "ranking": "ascending_score",
+    "coverage_guarantee": "none",
+    "reporting_role": "descriptive_secondary_only"
+  },
+  "robustness_strata": {
+    "component_size_bins": [
+      {"label": "size_1", "minimum": 1, "maximum": 1},
+      {"label": "size_2", "minimum": 2, "maximum": 2},
+      {"label": "size_3_to_5", "minimum": 3, "maximum": 5},
+      {"label": "size_6_to_10", "minimum": 6, "maximum": 10},
+      {"label": "size_11_plus", "minimum": 11, "maximum": null}
+    ],
+    "protein_length": {"scheme": "outer_test_quartiles", "quantiles": [0.0, 0.25, 0.5, 0.75, 1.0]}
+  },
+  "campaign_aggregation": {
+    "required_primary_jobs": 45,
+    "require_complete_cartesian_product": true,
+    "job_grid": {
+      "outer_folds": [0, 1, 2, 3, 4],
+      "split_seeds": [42, 43, 44],
+      "training_seeds": [42, 43, 44]
+    },
+    "per_seed_pair_oof_rule": "each_gene_exactly_once_across_five_outer_folds",
+    "per_gene_prediction_count": 9,
+    "prediction_aggregation": "arithmetic_mean_across_three_split_seeds_by_three_training_seeds",
+    "baseline_family_candidates": [
+      "GLOBAL-TRAIN-MEAN",
+      "SEQUENCE-KNN",
+      "SEQUENCE-WEIGHTED-KNN",
+      "PLM-RIDGE",
+      "STATIC-CONVEX-STACK",
+      "IDFREE-PLM-MEAN-MLP",
+      "DECOMP-MEAN-ONLY"
+    ],
+    "baseline_family_selection": "independent_within_each_job_from_that_jobs_inner_validation_only",
+    "cross_job_baseline_family_selection_forbidden": true,
+    "selected_baseline_consensus": "arithmetic_mean_of_each_jobs_explicit_selected_baseline_outer_prediction",
+    "consensus_reference": {
+      "global_train_mean_prediction_aggregation": "arithmetic_mean_across_nine_out_of_fold_predictions",
+      "gene_mean_r2_denominator": "sum_squared_error_of_consensus_GLOBAL-TRAIN-MEAN_prediction"
+    },
+    "consensus_risk_and_distance": {
+      "nearest_training_distance_aggregation": "arithmetic_mean_across_nine_out_of_fold_nearest_outer_train_cosine_distances",
+      "selective_risk_score_aggregation": "arithmetic_mean_across_nine_out_of_fold_validation_fitted_risk_scores",
+      "selective_order": "ascending_consensus_risk_score_then_canonical_gene_index",
+      "distance_quartile_definition": "quartiles_of_consensus_nearest_training_distance_across_all_primary_genes",
+      "distance_quartile_quantiles": [0.0, 0.25, 0.5, 0.75, 1.0]
+    },
+    "run_prediction_array_keys": {
+      "gene_ids": "outer_test_gene_ids",
+      "canonical_gene_indices": "outer_test_gene_indices",
+      "source_gene_indices": "source_test_gene_indices",
+      "component_ids": "outer_test_component_ids",
+      "component_sizes": "outer_test_component_size_full_release",
+      "protein_lengths": "outer_test_protein_length_residues",
+      "cell_ids": "cell_ids",
+      "source_cell_indices": "source_cell_indices",
+      "observed_gene_effect": "observed_gene_effect",
+      "observed_gene_mean": "observed_gene_mean",
+      "observed_gene_centered_residual": "observed_gene_centered_residual",
+      "nearest_training_distance": "nearest_outer_train_cosine_distance",
+      "distance_gate_coordinate": "distance_gate_z",
+      "distance_stack_weight_global": "distance_stack_weight_global",
+      "distance_stack_weight_knn": "distance_stack_weight_knn",
+      "distance_stack_weight_ridge": "distance_stack_weight_ridge",
+      "selective_risk_score": "validation_fitted_distance_risk_score",
+      "selected_baseline_name": "job_selected_baseline_name",
+      "selected_baseline_prediction": "job_selected_baseline_gene_mean_prediction",
+      "method_gene_mean_predictions": {
+        "GLOBAL-TRAIN-MEAN": "global_train_mean_prediction",
+        "SEQUENCE-KNN": "sequence_knn_gene_mean_prediction",
+        "SEQUENCE-WEIGHTED-KNN": "sequence_weighted_knn_gene_mean_prediction",
+        "PLM-RIDGE": "plm_ridge_gene_mean_prediction",
+        "STATIC-CONVEX-STACK": "static_convex_stack_gene_mean_prediction",
+        "FAMILY-DISTANCE-STACK": "family_distance_stack_gene_mean_prediction",
+        "IDFREE-PLM-MEAN-MLP": "idfree_plm_mean_mlp_prediction",
+        "DECOMP-MEAN-ONLY": "decomp_mean_only_gene_mean_prediction",
+        "FAMILY-INDUCTIVE-DECOMP": "family_inductive_decomp_gene_mean_prediction"
+      },
+      "secondary_centered_residual_prediction": "family_inductive_decomp_centered_residual_prediction",
+      "secondary_total_prediction": "family_inductive_decomp_total_prediction"
+    },
+    "consensus_prediction_artifact": {
+      "filename": "consensus-predictions.npz",
+      "schema": "DepPLM-family-transfer-consensus-predictions-v2",
+      "exact_keys": [
+        "schema",
+        "gene_ids",
+        "canonical_gene_indices",
+        "component_ids",
+        "family_distance_stack_gene_mean_prediction",
+        "consensus_per_job_selected_baseline_gene_mean_prediction",
+        "consensus_global_train_mean_prediction"
+      ],
+      "completion_binding": "completion.json.artifacts.consensus_predictions_records_file_bytes_sha256_and_per_array_dtype_shape_sha256"
+    },
+    "campaign_roster_digest_required": true,
+    "primary_metrics_and_gates_use_consensus_predictions": true,
+    "single_run_gates_are_diagnostic_only": true,
+    "missing_failed_or_duplicate_job_blocks_aggregation": true,
+    "external_outcomes_forbidden_until_consensus_artifact_is_frozen": true
+  },
+  "temporal_26q3": {
+    "release": "DepMap_26Q3_Public",
+    "outcome_filename": "CRISPRGeneEffect.csv",
+    "outcome_project_state_at_lock": "not_downloaded_or_parsed",
+    "access_scope": "designated_server_only_after_code_and_24q4_consensus_freeze",
+    "access_ledger_path": "results/family_inductive_v2/temporal-access-ledger.jsonl",
+    "first_access_event_required_before_outcome_parse": true,
+    "acquisition_ledger_event_required_before_outcome_bytes": true,
+    "input_snapshot_sha256_required": true,
+    "cohort": {
+      "primary_models": "model_ids_present_in_26q3_and_absent_from_exact_24q4_crispr_gene_effect_source",
+      "baseline_model_ids_source": {
+        "path": "data/processed/cell_lines.txt",
+        "sha256": "a70121fdaf136915e4e82e781fc25959477c220499a455f5c235f9574a2b7683",
+        "semantics": "exact_24q4_crispr_gene_effect_row_order_and_model_ids"
+      },
+      "minimum_new_models": 100,
+      "gene_header_regex": "^(?P<symbol>.+) \\((?P<entrez>[0-9]+)\\)$",
+      "gene_matching": "exact_symbol_after_terminal_numeric_entrez_suffix_removal",
+      "synonym_rescue": "forbidden",
+      "duplicate_symbol_action": "fail_closed",
+      "minimum_finite_model_fraction_per_gene": 0.8,
+      "minimum_eligible_genes": 5000
+    },
+    "prediction_source": "frozen_24q4_primary_consensus_without_refit_or_recalibration",
+    "primary_method_prediction": "FAMILY-DISTANCE-STACK",
+    "comparison_prediction": "consensus_per_job_selected_baseline",
+    "reference_prediction": "consensus_GLOBAL-TRAIN-MEAN",
+    "primary_metric": "gene_mean_r2_vs_frozen_consensus_global_prediction",
+    "primary_comparison": "delta_r2_vs_frozen_consensus_per_job_selected_baseline",
+    "sensitivity_metrics": ["pearson", "spearman", "mse", "mae"],
+    "bootstrap": {"unit": "sequence_component", "replicates": 5000, "confidence_level": 0.95, "seed": 20261029},
+    "source_provenance_contract": {
+      "required": true,
+      "receipt_path": "data/depmap/DepMap_26Q3_Public/source_receipt.json",
+      "release_id": "DepMap_26Q3_Public",
+      "outcome_filename": "CRISPRGeneEffect.csv",
+      "required_fields": [
+        "release_id", "official_release_url", "official_file_url",
+        "archive_file_id", "retrieved_at_utc", "bytes", "sha256"
+      ],
+      "allowed_url_hosts": ["depmap.org", "figshare.com", "api.figshare.com"],
+      "manual_official_metadata_verification_required": true
+    },
+    "shared_model_pipeline_correction_analysis": "secondary_cannot_replace_new_model_primary",
+    "shared_model_pipeline_correction_contract": {
+      "role": "secondary_cannot_replace_new_model_primary",
+      "shared_models": "exact_24q4_26q3_model_id_intersection_all",
+      "gene_matching": "same_exact_symbol_mapping_as_primary",
+      "minimum_finite_paired_shared_models_per_gene": 30,
+      "minimum_eligible_genes": 5000,
+      "correction": "per_gene_median_of_26q3_minus_24q4_paired_shared_model_values",
+      "evaluation_cohort": "same_new_models_as_primary",
+      "predictions": "frozen_24q4_consensus_predictions_plus_per_gene_correction",
+      "reference": "frozen_24q4_consensus_global_prediction_plus_same_correction",
+      "failed_eligibility_action": "report_ineligible_no_primary_rescue"
+    },
+    "organoid_overlap_contract": {
+      "exact_model_id_overlap_audit_required": true,
+      "predeclared_organoid_model_ids": {
+        "path": "docs/revision_v4/organoid_model_ids_predeclared.txt",
+        "sha256": "39c5fa0e2eaa0d7157732803ab4bc1f0ad81bd101a66fc09ea6bb101d6ea9035",
+        "count": 256,
+        "format": "utf8_one_nonempty_unique_exact_id_per_line_lf_sorted_bytewise",
+        "source_path": "data/external/sanger_organoid_2026/features-v1/data_covariates_ALL-organoids.csv",
+        "source_column": "sample_ID",
+        "source_sha256": "e57603e0ae26780ef112cbdbf063818dd17837858353894ba29e75f6936e9f64"
+      },
+      "identifier_namespace_mismatch_action": "fail_unresolved_never_infer_zero_overlap",
+      "treat_temporal_and_organoid_evidence_as_independent_if_overlap_nonzero": false,
+      "nonoverlap_sensitivity_required_when_minimum_models_available": 30,
+      "nonoverlap_sensitivity_minimum_eligible_genes": 5000,
+      "report_overlap_counts_and_model_ids": true
+    },
+    "post_access_changes_forbidden": [
+      "model_refit",
+      "gate_recalibration",
+      "hyperparameter_change",
+      "endpoint_change",
+      "mapping_change",
+      "subset_replacement",
+      "threshold_change"
+    ]
+  },
+  "external_3d_analysis": {
+    "prediction_source": "frozen_24q4_primary_consensus",
+    "primary_method_prediction": "FAMILY-DISTANCE-STACK",
+    "comparison_prediction": "consensus_per_job_selected_baseline",
+    "outcome_scale": "organoid_corrected_crispr_log_fold_change",
+    "outcome_access_status": "previously_downloaded_and_inspected",
+    "relationship_to_26q3": "potential_shared_organoid_models_and_related_screen_source_requires_exact_overlap_audit_and_forbids_independence_claim",
+    "primary_metric": "arithmetic_mean_per_organoid_spearman",
+    "comparison": "paired_per_organoid_method_minus_baseline_spearman",
+    "forbidden_metrics": ["raw_mse", "raw_mae", "raw_r2"],
+    "minimum_eligible_organoids": 100,
+    "minimum_common_genes_per_organoid": 5000,
+    "required_tissues": ["COLO", "OESO", "PANC"],
+    "bootstrap": {
+      "scheme": "two_way_sequence_component_and_tissue_stratified_organoid",
+      "replicates": 5000,
+      "confidence_level": 0.95,
+      "seed": 20261028
+    }
+  },
+  "gates": {
+    "development_signal": {
+      "full_coverage_gene_mean_r2_min_exclusive": 0.0,
+      "mse_improvement_vs_global_bootstrap_lower_min_exclusive": 0.0,
+      "multi_gene_component_r2_min_exclusive": 0.0,
+      "farthest_distance_quartile_r2_min_exclusive": 0.0
+    },
+    "method": {
+      "delta_r2_vs_per_job_selected_baseline_min": 0.01,
+      "delta_r2_bootstrap_lower_min_exclusive": 0.0
+    },
+    "temporal_26q3": {
+      "gene_mean_r2_min_exclusive": 0.0,
+      "delta_r2_vs_frozen_selected_baseline_min": 0.01,
+      "delta_r2_bootstrap_lower_min_exclusive": 0.0
+    },
+    "context": {
+      "residual_r2_min_exclusive": 0.0,
+      "residual_r2_bootstrap_lower_min_exclusive": 0.0,
+      "mean_within_gene_pearson_min": 0.05
+    },
+    "external_3d": {
+      "mean_per_organoid_spearman_min": 0.2,
+      "paired_spearman_delta_min_exclusive": 0.0,
+      "paired_spearman_delta_two_way_bootstrap_lower_min_exclusive": 0.0
+    }
+  },
+  "required_baselines": [
+    "GLOBAL-TRAIN-MEAN",
+    "SEQUENCE-KNN",
+    "SEQUENCE-WEIGHTED-KNN",
+    "PLM-RIDGE",
+    "STATIC-CONVEX-STACK",
+    "IDFREE-PLM-MEAN-MLP",
+    "DECOMP-MEAN-ONLY"
+  ],
+  "primary_feature_access": "gene_label_inductive_and_gene_feature_inductive_sequence_only_query",
+  "context_claim_requires_context_gate": true,
+  "selective_results_cannot_replace_full_coverage": true,
+  "failed_gates_must_be_reported": true,
+  "positive_result_is_not_guaranteed": true
+}

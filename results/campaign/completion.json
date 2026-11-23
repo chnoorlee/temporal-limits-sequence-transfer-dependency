@@ -1,0 +1,339 @@
+{
+  "artifacts": {
+    "campaign_input_manifest": {
+      "bytes": 70268,
+      "path": "campaign-input-manifest.json",
+      "sha256": "6287a78f84db3a16d9f298e50df7096053d1aab4bcfa4085810502b064990476"
+    },
+    "campaign_metrics": {
+      "bytes": 128832,
+      "path": "campaign-metrics.json",
+      "sha256": "db4658012bebad5e4de29be4e61fadb6cc3d3d58a3021cb96628c07bc127a831"
+    },
+    "consensus_evidence": {
+      "arrays": {
+        "canonical_gene_indices": {
+          "dtype": "int64",
+          "sha256": "d32e8d66edf25484d06fadeb0ef75b95f7d6ed3bfacac4b04c9d812c10a74ab4",
+          "shape": [
+            17768
+          ]
+        },
+        "cell_ids": {
+          "dtype": "<U10",
+          "sha256": "6237b032db562a214128bd1d6da6ba190761b6c63496b2ed23fd89c4ec4041b4",
+          "shape": [
+            1103
+          ]
+        },
+        "component_ids": {
+          "dtype": "<U24",
+          "sha256": "4235f5296b5bacdced90d4efccf16b41e543b09495bc3f487f5503095612ef38",
+          "shape": [
+            17768
+          ]
+        },
+        "component_size_full_release": {
+          "dtype": "int64",
+          "sha256": "d7c408fcc6d6cf360dada2879d5e4c32f092702c9c9a75ab2cb459813e8cd31f",
+          "shape": [
+            17768
+          ]
+        },
+        "consensus_distance_gate_z": {
+          "dtype": "float64",
+          "sha256": "e50880a53cfb24f9d38411a2963943cdbaf5c7539f4c5197cae07aeab8d9f630",
+          "shape": [
+            17768
+          ]
+        },
+        "consensus_distance_stack_weight_global": {
+          "dtype": "float64",
+          "sha256": "1a0f1a83bdcfdd49ad9e951e98155fe1b53f5390301ff960b7ce598b02ff255a",
+          "shape": [
+            17768
+          ]
+        },
+        "consensus_distance_stack_weight_knn": {
+          "dtype": "float64",
+          "sha256": "384d2c5c40ac6e43165a903a2179638afe94073e81a1da1c8990b34687e49bf6",
+          "shape": [
+            17768
+          ]
+        },
+        "consensus_distance_stack_weight_ridge": {
+          "dtype": "float64",
+          "sha256": "57dccc5d244bea1edf600bd5f44d530d4f7cb8ba008135c5380535f1d97710de",
+          "shape": [
+            17768
+          ]
+        },
+        "consensus_job_selected_baseline_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "b01c43351bd8db478702d2e6d315f178424178cb5a432ce3ad33bc5b1a5db69b",
+          "shape": [
+            17768
+          ]
+        },
+        "consensus_nearest_training_cosine_distance": {
+          "dtype": "float64",
+          "sha256": "6b14f7dafeec792b86edc75122ee7c987864d8ee6b92247fe1804eac482dea19",
+          "shape": [
+            17768
+          ]
+        },
+        "consensus_validation_fitted_distance_risk_score": {
+          "dtype": "float64",
+          "sha256": "fb44c56a5fa58eeceeca9aec25b21554a6b3089b698f6e23d5fe3a29bf01aa81",
+          "shape": [
+            17768
+          ]
+        },
+        "decomp_mean_only_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "310ceaaeb209bc25e5b6eb857bf6a9d625134355a45421d861dba881fcb50300",
+          "shape": [
+            17768
+          ]
+        },
+        "distance_quartile_edges": {
+          "dtype": "float64",
+          "sha256": "cc360b5eec2dde975e5560f515794b4dc5fdac9ffa9e85dfce905a996355b65b",
+          "shape": [
+            5
+          ]
+        },
+        "distance_quartile_zero_based": {
+          "dtype": "int8",
+          "sha256": "7ca13314804bbd1957fe23c81140fd26aa099a9a9478962936f211fa9e5f2743",
+          "shape": [
+            17768
+          ]
+        },
+        "family_distance_stack_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "5f44005ac77bd93e372134174dd8ca592d7ef83d191b94be2d745ccfba0e2843",
+          "shape": [
+            17768
+          ]
+        },
+        "family_inductive_decomp_centered_residual_prediction": {
+          "dtype": "float32",
+          "sha256": "0337cb2bf8861b6ae1dcdb863c42579487369686949296c34947feddf8bb48f5",
+          "shape": [
+            1103,
+            17768
+          ]
+        },
+        "family_inductive_decomp_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "9c170221e2d877e8f77324bd76ed56cbb6663073068ba4ecfc4c11190825bdd6",
+          "shape": [
+            17768
+          ]
+        },
+        "family_inductive_decomp_total_prediction": {
+          "dtype": "float32",
+          "sha256": "a5291fdfbc459f466aed4aad3591d93028de109da2aebd1c6b8b4a0812a6197e",
+          "shape": [
+            1103,
+            17768
+          ]
+        },
+        "gene_ids": {
+          "dtype": "<U10",
+          "sha256": "51595cd67ab36d2f6952c17e04e78560620851801c62ed33ac99753d02ea398e",
+          "shape": [
+            17768
+          ]
+        },
+        "global_train_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "98a92cb0fc8b8bc2797cdc241f25b716146d5c24f8b43b2d3c928449007d3071",
+          "shape": [
+            17768
+          ]
+        },
+        "idfree_plm_mean_mlp_prediction": {
+          "dtype": "float64",
+          "sha256": "d9bf65d817313c133cfd4619930c3988944ca53737ca0668979fcfd225e88c1e",
+          "shape": [
+            17768
+          ]
+        },
+        "observed_gene_centered_residual": {
+          "dtype": "float32",
+          "sha256": "31cdcf38b7715367a87a61a28db7e829e392c90a57d3989f543838ae2988f6c4",
+          "shape": [
+            1103,
+            17768
+          ]
+        },
+        "observed_gene_effect": {
+          "dtype": "float32",
+          "sha256": "acee9205ca26c571ae1c94f0c46d1e1386a41873acf7ef37edf829cb90e891ad",
+          "shape": [
+            1103,
+            17768
+          ]
+        },
+        "observed_gene_mean": {
+          "dtype": "float64",
+          "sha256": "9671acd294d51b6fbeeb9c22fb994f4d83164c9c163b71ee6e563c4f96da4361",
+          "shape": [
+            17768
+          ]
+        },
+        "plm_ridge_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "869ccb304bc0c28ddf84bc9c8ef05f05c2ebbdd3f902bb55466b60be08fae50f",
+          "shape": [
+            17768
+          ]
+        },
+        "protein_length_quartile_edges": {
+          "dtype": "float64",
+          "sha256": "56ce5ab5aaf26b757bd5a462fcedf43b6c6c49b8c82ff734c904e433b533b2ce",
+          "shape": [
+            5
+          ]
+        },
+        "protein_length_quartile_zero_based": {
+          "dtype": "int8",
+          "sha256": "8e8af037ffc5c78defd04ac905729120db3c8e0aa1089a30d28237d00d12c91c",
+          "shape": [
+            17768
+          ]
+        },
+        "protein_length_residues": {
+          "dtype": "int64",
+          "sha256": "6ccf608884a2618111b8f85945cfb375f08aa6386806b9b73437ac6517653532",
+          "shape": [
+            17768
+          ]
+        },
+        "schema": {
+          "dtype": "<U36",
+          "sha256": "0f2128cff3f90630881240d1e9680e06e01103a50fe81c9995e12c61a6f1e60d",
+          "shape": []
+        },
+        "selective_order": {
+          "dtype": "int64",
+          "sha256": "c52b232bdb60954db69baf2fb90265d68810b749539b5667b3ab392cd7fc66e2",
+          "shape": [
+            17768
+          ]
+        },
+        "sequence_knn_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "9a32e74f9faf99ba14dc821ddf847a7a703be44762525232d36415308503636e",
+          "shape": [
+            17768
+          ]
+        },
+        "sequence_weighted_knn_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "261578c8e96e64a492efc769787be34f4f11260be68523b1eeb86de99ad7e60c",
+          "shape": [
+            17768
+          ]
+        },
+        "source_cell_indices": {
+          "dtype": "int64",
+          "sha256": "d817d4541457ae5fb97f109ae1905d7232cacf17740ae6156f71d1823a92de39",
+          "shape": [
+            1103
+          ]
+        },
+        "source_gene_indices": {
+          "dtype": "int64",
+          "sha256": "d32e8d66edf25484d06fadeb0ef75b95f7d6ed3bfacac4b04c9d812c10a74ab4",
+          "shape": [
+            17768
+          ]
+        },
+        "static_convex_stack_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "abaecfb7693ffd675b61c209dce53b1b3894e0f8e073e26bd85e1e8ebfcf0dc7",
+          "shape": [
+            17768
+          ]
+        }
+      },
+      "bytes": 293373454,
+      "path": "consensus-evidence.npz",
+      "schema": "DepPLM-family-inductive-consensus-v2",
+      "sha256": "71d725697cf0d605cf38338af2e04d175c52898d3e2bad513c1eea42f3967e3e"
+    },
+    "consensus_predictions": {
+      "arrays": {
+        "canonical_gene_indices": {
+          "dtype": "int64",
+          "sha256": "d32e8d66edf25484d06fadeb0ef75b95f7d6ed3bfacac4b04c9d812c10a74ab4",
+          "shape": [
+            17768
+          ]
+        },
+        "component_ids": {
+          "dtype": "<U24",
+          "sha256": "4235f5296b5bacdced90d4efccf16b41e543b09495bc3f487f5503095612ef38",
+          "shape": [
+            17768
+          ]
+        },
+        "consensus_global_train_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "98a92cb0fc8b8bc2797cdc241f25b716146d5c24f8b43b2d3c928449007d3071",
+          "shape": [
+            17768
+          ]
+        },
+        "consensus_per_job_selected_baseline_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "b01c43351bd8db478702d2e6d315f178424178cb5a432ce3ad33bc5b1a5db69b",
+          "shape": [
+            17768
+          ]
+        },
+        "family_distance_stack_gene_mean_prediction": {
+          "dtype": "float64",
+          "sha256": "5f44005ac77bd93e372134174dd8ca592d7ef83d191b94be2d745ccfba0e2843",
+          "shape": [
+            17768
+          ]
+        },
+        "gene_ids": {
+          "dtype": "<U10",
+          "sha256": "51595cd67ab36d2f6952c17e04e78560620851801c62ed33ac99753d02ea398e",
+          "shape": [
+            17768
+          ]
+        },
+        "schema": {
+          "dtype": "<U47",
+          "sha256": "bd80be08f4ecc0e3c0a69cce896571fef5123130887eda7a64cb4204de1b7b58",
+          "shape": []
+        }
+      },
+      "bytes": 578760,
+      "path": "consensus-predictions.npz",
+      "schema": "DepPLM-family-transfer-consensus-predictions-v2",
+      "sha256": "3acfa5cfeffdc730bc43e30ef9b8a1e35c37d36fd02b614ac64c63288e72eb02"
+    }
+  },
+  "campaign_id": "diagnostic-primary-20261123",
+  "completed_at_utc": "2026-11-23T07:14:30Z",
+  "external_outcomes_read": false,
+  "integrity": {
+    "complete_45_job_cartesian_product": true,
+    "completion_written_last": true,
+    "consensus_is_arithmetic_mean": true,
+    "cross_job_baseline_identity_selection_used": false,
+    "each_gene_exactly_once_per_seed_pair": true,
+    "each_job_baseline_selected_from_its_own_inner_validation_only": true,
+    "external_outcomes_read": false,
+    "nine_predictions_per_gene": true
+  },
+  "schema": "DepPLM-family-inductive-campaign-completion-v2",
+  "status": "complete"
+}

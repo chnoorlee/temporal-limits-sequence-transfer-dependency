@@ -1,0 +1,221 @@
+{
+ "bootstrap": {
+  "delta_r2_method_minus_baseline": {
+   "ci_high": -0.007258374939996487,
+   "ci_low": -0.038132539496394335,
+   "estimate": -0.022885842967741203
+  },
+  "method_mse_improvement_vs_global": {
+   "ci_high": 0.04152198539735087,
+   "ci_low": 0.03186041029341989,
+   "estimate": 0.03658814963772346
+  },
+  "n_components": 11577,
+  "replicates": 5000
+ },
+ "distance_quartiles": {
+  "edges": [
+   0.0021734466379146333,
+   0.012280264963601129,
+   0.017168746342908325,
+   0.024504368976100727,
+   0.20698205940594805
+  ],
+  "quartiles": {
+   "Q1": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.0028399527535464828,
+      "ci_low": -0.040801449482706496,
+      "estimate": -0.019053782084427345
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.048742747344532315,
+      "ci_low": 0.033010823848876714,
+      "estimate": 0.04046269255437705
+     },
+     "n_components": 3326,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.019053782084427096,
+    "method": {
+     "mae": 0.2248478554149578,
+     "mse": 0.1344697924951649,
+     "n": 4442,
+     "pearson": 0.48147059689971644,
+     "r2": 0.2313046232831928
+    },
+    "n_components": 3326,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.21781004501279433,
+     "mse": 0.13113666704554364,
+     "n": 4442,
+     "pearson": 0.49710339705363554,
+     "r2": 0.2503584053676199
+    }
+   },
+   "Q2": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.022373621048949553,
+      "ci_low": -0.03784554785588748,
+      "estimate": -0.008954081260924852
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.04858972707968443,
+      "ci_low": 0.029955446329581553,
+      "estimate": 0.038969494235774095
+     },
+     "n_components": 3489,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.008954081260924784,
+    "method": {
+     "mae": 0.1924174872413044,
+     "mse": 0.10567778170589837,
+     "n": 4442,
+     "pearson": 0.5208942829688383,
+     "r2": 0.2694104951654128
+    },
+    "n_components": 3489,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.18696545590156521,
+     "mse": 0.10438259824294523,
+     "n": 4442,
+     "pearson": 0.530970154716752,
+     "r2": 0.2783645764263376
+    }
+   },
+   "Q3": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.017315670061273217,
+      "ci_low": -0.04933683821758461,
+      "estimate": -0.017311245005665218
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.047790966930862114,
+      "ci_low": 0.03129695789042462,
+      "estimate": 0.039204940419076746
+     },
+     "n_components": 3452,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.017311245005665277,
+    "method": {
+     "mae": 0.18625558571667747,
+     "mse": 0.10098885861948205,
+     "n": 4442,
+     "pearson": 0.5298286449747849,
+     "r2": 0.2796481776508092
+    },
+    "n_components": 3452,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.1790351376726479,
+     "mse": 0.09856192941605056,
+     "n": 4442,
+     "pearson": 0.5482088291159657,
+     "r2": 0.29695942265647446
+    }
+   },
+   "Q4": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": -0.013633257034570911,
+      "ci_low": -0.08736172927686411,
+      "estimate": -0.05093653431896229
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.03829524534690475,
+      "ci_low": 0.018822677842198796,
+      "estimate": 0.027715471341665927
+     },
+     "n_components": 2752,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.05093653431896228,
+    "method": {
+     "mae": 0.18016660491883446,
+     "mse": 0.09588459741043057,
+     "n": 4442,
+     "pearson": 0.4705126525627337,
+     "r2": 0.22423508029962835
+    },
+    "n_components": 2752,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.17050589773749042,
+     "mse": 0.0895888382666133,
+     "n": 4442,
+     "pearson": 0.5241688262420222,
+     "r2": 0.27517161461859063
+    }
+   }
+  }
+ },
+ "headline": {
+  "delta_r2_point": -0.0228858429677411,
+  "method": {
+   "mae": 0.19592188332294352,
+   "mse": 0.10925525755774397,
+   "n": 17768,
+   "pearson": 0.5021192541179128,
+   "r2": 0.2508728391725379
+  },
+  "selected_baseline": {
+   "mae": 0.18857913408112448,
+   "mse": 0.10591750824278817,
+   "n": 17768,
+   "pearson": 0.5246952113214408,
+   "r2": 0.273758682140279
+  }
+ },
+ "label": "layer6",
+ "n_genes": 17768,
+ "runs": [
+  {
+   "fold": 0,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer6_runs/diagnostic-layer6-of0-ss42-ts42",
+   "run_id": "diagnostic-layer6-of0-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 1,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer6_runs/diagnostic-layer6-of1-ss42-ts42",
+   "run_id": "diagnostic-layer6-of1-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 2,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer6_runs/diagnostic-layer6-of2-ss42-ts42",
+   "run_id": "diagnostic-layer6-of2-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 3,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer6_runs/diagnostic-layer6-of3-ss42-ts42",
+   "run_id": "diagnostic-layer6-of3-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 4,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer6_runs/diagnostic-layer6-of4-ss42-ts42",
+   "run_id": "diagnostic-layer6-of4-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  }
+ ],
+ "status": "diagnostic_complete"
+}

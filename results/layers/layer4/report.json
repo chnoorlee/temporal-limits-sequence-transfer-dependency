@@ -1,0 +1,221 @@
+{
+ "bootstrap": {
+  "delta_r2_method_minus_baseline": {
+   "ci_high": -0.015541950037793182,
+   "ci_low": -0.06307628898039866,
+   "estimate": -0.03645968002892731
+  },
+  "method_mse_improvement_vs_global": {
+   "ci_high": 0.03996657317265609,
+   "ci_low": 0.027550679946671104,
+   "estimate": 0.0340842807797878
+  },
+  "n_components": 11577,
+  "replicates": 5000
+ },
+ "distance_quartiles": {
+  "edges": [
+   0.0005963064252393346,
+   0.002520595056268393,
+   0.003467472030630303,
+   0.004790361783894581,
+   0.06681681688602914
+  ],
+  "quartiles": {
+   "Q1": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": -0.006116155171273944,
+      "ci_low": -0.05875193569097467,
+      "estimate": -0.03280395123598769
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.05577837802261858,
+      "ci_low": 0.03503490678604986,
+      "estimate": 0.04475887446723784
+     },
+     "n_components": 2971,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.032803951235987894,
+    "method": {
+     "mae": 0.21270882291885246,
+     "mse": 0.12506955595524905,
+     "n": 4442,
+     "pearson": 0.5142796849034827,
+     "r2": 0.26355348368874365
+    },
+    "n_components": 2971,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.199803142333232,
+     "mse": 0.11949851240518543,
+     "n": 4442,
+     "pearson": 0.544839539761211,
+     "r2": 0.29635743492473154
+    }
+   },
+   "Q2": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": -0.00648879850709015,
+      "ci_low": -0.0661339267508764,
+      "estimate": -0.0363886288184025
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.0521153590498445,
+      "ci_low": 0.03441286209029108,
+      "estimate": 0.0427242530785456
+     },
+     "n_components": 3432,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.036388628818402435,
+    "method": {
+     "mae": 0.2024166352108228,
+     "mse": 0.11598876251506078,
+     "n": 4442,
+     "pearson": 0.5230508077215863,
+     "r2": 0.26919186759039004
+    },
+    "n_components": 3432,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.19081876622294786,
+     "mse": 0.11021341350197572,
+     "n": 4442,
+     "pearson": 0.5531375392619469,
+     "r2": 0.3055804964087925
+    }
+   },
+   "Q3": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.01433373682583924,
+      "ci_low": -0.05063721677088916,
+      "estimate": -0.01980767821289416
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.038154887081748495,
+      "ci_low": 0.024327923429622617,
+      "estimate": 0.03100519998628787
+     },
+     "n_components": 3493,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.019807678212894198,
+    "method": {
+     "mae": 0.19135641759624136,
+     "mse": 0.10776019835567807,
+     "n": 4442,
+     "pearson": 0.4728875298305933,
+     "r2": 0.22343610407747572
+    },
+    "n_components": 3493,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.18285450108638954,
+     "mse": 0.10501157799823632,
+     "n": 4442,
+     "pearson": 0.5018292419268627,
+     "r2": 0.24324378229036991
+    }
+   },
+   "Q4": {
+    "bootstrap": {
+     "delta_r2_method_minus_baseline": {
+      "ci_high": 0.01073556733008794,
+      "ci_low": -0.16845963308227002,
+      "estimate": -0.06181443690137207
+     },
+     "method_mse_improvement_vs_global": {
+      "ci_high": 0.03253619434685053,
+      "ci_low": 0.0011071367845605997,
+      "estimate": 0.017848795587079882
+     },
+     "n_components": 3084,
+     "replicates": 5000
+    },
+    "delta_r2_point": -0.061814436901372116,
+    "method": {
+     "mae": 0.19566049110651232,
+     "mse": 0.09821798883673065,
+     "n": 4442,
+     "pearson": 0.4044027731630408,
+     "r2": 0.153780391829467
+    },
+    "n_components": 3084,
+    "n_genes": 4442,
+    "selected_baseline": {
+     "mae": 0.17778644744846783,
+     "mse": 0.09104338591461986,
+     "n": 4442,
+     "pearson": 0.4754871240964657,
+     "r2": 0.21559482873083913
+    }
+   }
+  }
+ },
+ "headline": {
+  "delta_r2_point": -0.0364596800289273,
+  "method": {
+   "mae": 0.20053559170810722,
+   "mse": 0.11175912641567963,
+   "n": 17768,
+   "pearson": 0.48345047753515197,
+   "r2": 0.2337046386615621
+  },
+  "selected_baseline": {
+   "mae": 0.18781571427275928,
+   "mse": 0.10644172245500434,
+   "n": 17768,
+   "pearson": 0.523483356824166,
+   "r2": 0.2701643186904894
+  }
+ },
+ "label": "layer4",
+ "n_genes": 17768,
+ "runs": [
+  {
+   "fold": 0,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer4_runs/diagnostic-layer4-of0-ss42-ts42",
+   "run_id": "diagnostic-layer4-of0-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 1,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer4_runs/diagnostic-layer4-of1-ss42-ts42",
+   "run_id": "diagnostic-layer4-of1-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 2,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer4_runs/diagnostic-layer4-of2-ss42-ts42",
+   "run_id": "diagnostic-layer4-of2-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 3,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer4_runs/diagnostic-layer4-of3-ss42-ts42",
+   "run_id": "diagnostic-layer4-of3-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  },
+  {
+   "fold": 4,
+   "identity": 30,
+   "path": "/home/activetracking/depplm_diag_20261123/results/family_inductive_diagnostic_v15/embedding_layer4_runs/diagnostic-layer4-of4-ss42-ts42",
+   "run_id": "diagnostic-layer4-of4-ss42-ts42",
+   "split_seed": 42,
+   "training_seed": 42
+  }
+ ],
+ "status": "diagnostic_complete"
+}

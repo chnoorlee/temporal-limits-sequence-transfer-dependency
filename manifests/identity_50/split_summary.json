@@ -1,0 +1,49 @@
+{
+  "assignment_algorithm": "components_descending_size_then_sha256_seed_component_id; greedy_smallest_fold_then_lowest_fold_index",
+  "component_count": 14117,
+  "component_definition": "connected_components_of_qualifying_mmseqs_pairs",
+  "exact_duplicate_groups": [
+    [
+      "CALM1",
+      "CALM2",
+      "CALM3"
+    ],
+    [
+      "TUBA3C",
+      "TUBA3D"
+    ]
+  ],
+  "family_units": {
+    "bytes": 1873333,
+    "path": "identity_50/family_units.tsv",
+    "sha256": "0bdfa74c35e3c6d9f2a0eb87ec13e673481bab9e2cf090aa8063eb437891597a"
+  },
+  "fold_count": 5,
+  "fold_gene_counts": [
+    3554,
+    3554,
+    3554,
+    3553,
+    3553
+  ],
+  "fold_manifest": {
+    "bytes": 831287,
+    "path": "identity_50/fold_manifest.tsv",
+    "sha256": "548ea6620dac02f835054e8de72030c802ccff5f2855b06629104ab6f8b66ec9"
+  },
+  "fold_seed": 42,
+  "gene_count": 17768,
+  "genes_in_multi_gene_components": 5529,
+  "identity_percent": 50.0,
+  "largest_component_size": 214,
+  "minimum_bidirectional_coverage": 0.8,
+  "multi_gene_component_count": 1878,
+  "schema": "depplm-family-holdout-v1",
+  "singleton_count": 12239,
+  "validation": {
+    "cross_component_qualifying_edges": 0,
+    "cross_fold_qualifying_edges": 0,
+    "exact_duplicate_fold_violations": 0,
+    "qualifying_edges": 9034
+  }
+}
