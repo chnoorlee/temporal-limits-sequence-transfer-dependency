@@ -72,4 +72,6 @@ before publication of the deposit.
 
 ## Citation
 
-TODO: author-approved author list, repository URL and archival DOI.
+Repository: https://github.com/chnoorlee/temporal-limits-sequence-transfer-dependency
+
+TODO: author-approved author list and Zenodo archival DOI.
